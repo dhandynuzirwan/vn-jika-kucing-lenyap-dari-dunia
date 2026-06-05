@@ -1,0 +1,17 @@
+# Cache internal Godot (Sangat penting untuk di-ignore!)
+.godot/
+
+# Log dan crash dumps
+*.log
+*.crash
+
+# File ekspor (jika Anda melakukan build lokal)
+build/
+bin/
+
+# File konfigurasi OS
+.DS_Store
+Thumbs.db
+
+# File konfigurasi editor personal teman Anda
+.import/
