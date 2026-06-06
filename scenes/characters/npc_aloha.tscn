@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cayvveux3h6ow"]
+
+[ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="1_thh2u"]
+
+[node name="NPC_Aloha" type="Area2D" unique_id=486957782]
+script = ExtResource("1_thh2u")
+timeline_name = "babak1_aloha"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=735589168]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1426728369]

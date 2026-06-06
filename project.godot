@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+StoryManager="*uid://l8alx6gj06g"
 
 [dialogic]
 
