@@ -7,7 +7,8 @@
 
 [node name="NPC_Aloha" parent="." unique_id=486957782 instance=ExtResource("1_nkbtc")]
 position = Vector2(75, 25)
+timeline_name = "babak2_day1"
 
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("2_yd2cm")]
-position = Vector2(104, 28)
+position = Vector2(107, 28)
 speed = 80.0

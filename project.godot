@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VN Jika Kucing Lenyap Dari Dunia"
-run/main_scene="uid://bk63ktbftcj05"
+run/main_scene="uid://b0jcmrnsaw5ln"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -23,13 +23,72 @@ StoryManager="*uid://l8alx6gj06g"
 [dialogic]
 
 directories/dch_directory={
-"aloha": "res://scenes/characters/aloha.dch",
-"mc": "res://scenes/characters/mc.dch"
+"aloha": "res://assets/sprites/aloha.dch",
+"ibu": "res://assets/sprites/ibu.dch",
+"kubis": "res://assets/sprites/kubis.dch",
+"mantan": "res://assets/sprites/mantan.dch",
+"mc": "res://assets/sprites/mc.dch",
+"narator": "res://assets/sprites/narator.dch",
+"tsutaya": "res://assets/sprites/tsutaya.dch"
 }
 directories/dtl_directory={
+"babak1_prolog": "res://dialogues/babak1_prolog.dtl",
+"babak2_day1": "res://dialogues/babak2_day1.dtl",
+"babak3_flashback": "res://dialogues/babak3_flashback.dtl",
+"babak4_day2_ponsel": "res://dialogues/babak4_day2_ponsel.dtl",
+"babak5_day2_cafe": "res://dialogues/babak5_day2_cafe.dtl",
+"babak6_day3_film": "res://dialogues/babak6_day3_film.dtl",
+"babak7_day4_jam": "res://dialogues/babak7_day4_jam.dtl",
+"babak8_day5_kucing": "res://dialogues/babak8_day5_kucing.dtl",
+"babak9_true_ending": "res://dialogues/babak9_true_ending.dtl",
 "test_aloha": "res://scenes/characters/test_aloha.dtl"
 }
-layout/style_directory={}
+layout/style_directory={
+"": "res://assets/sprites/tema_narasi.tres",
+"tema_narasi": "res://assets/sprites/tema_narasi.tres"
+}
+extensions_folder="res://addons/dialogic_additions"
+text/letter_speed=0.07
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
+layout/style_list=["res://assets/sprites/tema_narasi.tres"]
+layout/default_style="res://assets/sprites/tema_narasi.tres"
+glossary/default_case_sensitive=true
+variables={
+"film_lenyap": false,
+"hari_ke": 1,
+"ponsel_lenyap": false,
+"true_ending": false
+}
 
 [display]
 

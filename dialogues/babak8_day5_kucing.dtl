@@ -1,0 +1,11 @@
+mc: (Aku terbangun dalam gelap. Kubis tidak ada di tempat biasanya. Jantungku berpacu, takut jika tawaran Aloha tadi malam benar-benar merenggutnya.)
+mc: (Dia masih ada. Syukurlah. Ibu pernah bilang: Bukan manusia yang memelihara kucing, tapi kucinglah yang rela mendampingi manusia. Aku baru mengerti itu sekarang.)
+aloha: Maunya gimana? Kucing atau nyawamu? Bukan soal yang sulit, kan? Kalau kau mati, kau tak bisa menyayangi kucing lagi.
+mc: Tunggu... beri aku waktu.
+aloha: Ambillah keputusan sebelum matahari terbit... atau nyawamu yang hilang.
+- YA (Lenyapkan Kucing demi nyawa)
+	set {pilihan_ending} = "bad_ending"
+	mc: Aku memilih hidup...
+- TIDAK (Pertahankan Kucing, biarkan aku mati)
+	set {true_ending} = true
+	mc: Tidak bisa, Kubis. Tidak akan.
