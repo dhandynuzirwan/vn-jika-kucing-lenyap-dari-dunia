@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="VN Jika Kucing Lenyap Dari Dunia"
+run/main_scene="uid://bk63ktbftcj05"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -21,9 +22,20 @@ StoryManager="*uid://l8alx6gj06g"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"aloha": "res://scenes/characters/aloha.dch",
+"mc": "res://scenes/characters/mc.dch"
+}
+directories/dtl_directory={
+"test_aloha": "res://scenes/characters/test_aloha.dtl"
+}
 layout/style_directory={}
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
@@ -47,6 +59,7 @@ dialogic_default_action={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

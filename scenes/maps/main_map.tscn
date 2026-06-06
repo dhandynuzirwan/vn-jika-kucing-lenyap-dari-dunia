@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bk63ktbftcj05"]
+
+[ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="1_axb7o"]
+[ext_resource type="PackedScene" uid="uid://cayvveux3h6ow" path="res://scenes/characters/npc_aloha.tscn" id="2_4rquj"]
+
+[node name="MainMap" type="Node2D" unique_id=1993015900]
+
+[node name="Player" parent="." unique_id=312454733 instance=ExtResource("1_axb7o")]
+
+[node name="NPC_Aloha" parent="." unique_id=486957782 instance=ExtResource("2_4rquj")]

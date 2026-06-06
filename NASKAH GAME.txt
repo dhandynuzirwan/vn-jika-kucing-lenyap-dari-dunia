@@ -1,0 +1,440 @@
+BABAK 1: PROLOG (Vonis & Putus Asa)
+Visual: Layar hitam pekat. Teks muncul perlahan di tengah.
+
+Narasi: "Stadium empat. Kata-kata dokter itu terus berputar seperti kaset rusak di kepalaku. Dunia seolah berhenti berputar tepat di depan wajahku."
+
+Audio : mesin ketik
+
+Visual: Rumah sakit yang buram (blur), MC berbaring lemah, dokter tampak berbicara tanpa suara (efek sunyi).
+
+Visual: MC berjalan gontai di koridor RS. Kamera fokus pada langkah kakinya yang berat.
+
+Visual: Jembatan dengan langit merah senja. Efek kamera bergetar (vibrate).
+
+Narasi: "Kenapa aku? Kenapa harus sekarang? Jika aku harus lenyap, maka biarkan dunia ini ikut lenyap bersamaku!"
+
+Audio: Suara detak jantung yang makin cepat, deru angin kencang, lalu hening total (pingsan). Layar menghitam perlahan.
+
+BABAK 2: DAY 1 – Munculnya Sang Iblis
+Narasi : Ternyata itu hanya khayalan konyol. Semua itu hanya terjadi di kepalaku yang terus berputar dengan rasa sakit yang datang perlahan.
+
+Visual: Kamar tidur MC. Seorang pria (Aloha) berdiri membelakangi jendela, mengenakan pakaian yang identik dengan MC.
+
+Dialog (MC): "Siapa kau? Kenapa wajahmu... persis sepertiku?"
+
+Dialog (Aloha): (Tersenyum menyeringai) "Aku juga tidak tahu siapa aku. Coba tebak.” 
+
+Dialog (MC): “Doppelganger? Malaikat maut? 
+
+Dialog (Aloha): Aku adalah Iblis."
+
+Dialog (MC): "Iblis?! Apa maumu?"
+
+Dialog (Aloha): "Sisa hidupmu tidak sampai sehari lagi. Apa kau akan menyerah begitu saja? Aku menawarkan Big Chance. Aku bisa menambah umurmu satu hari, untuk setiap satu benda yang kau hilangkan dari dunia ini."
+
+Dialog (Aloha): "Prinsipnya mudah: untuk memperoleh sesuatu, kau harus siap kehilangan sesuatu. Transaksi sederhana, bukan?"
+
+Visual: MC mondar-mandir dengan gelisah sambil menggendong kucingnya (Kubis).
+
+Dialog (MC): "Baiklah, aku setuju. Aku mau menghilangkan... jamur di kamar mandi, atau bangkai tikus di loteng!"
+
+Dialog (Aloha): (Tertawa lepas) "Kau pikir aku tukang bersih-bersih? Aku yang menentukan. Tergantung suasana hatiku."
+
+Visual: Aloha mengambil kotak cokelat dari meja.
+
+Dialog (Aloha): "Mari kita mulai dengan... Cokelat. Kau setuju?"
+
+Choice (Pilihan): [YA] (Pemain tidak punya pilihan lain di awal sebagai tutorial).
+
+Visual: Aloha memakan cokelat itu dengan sangat nikmat.
+
+Dialog (Aloha): "Hmm! Manis, pahit, dan meleleh sempurna! Aku berubah pikiran. Aku terlalu menyukai ini. Cokelat tetap ada, tapi kau tetap kuberi satu hari tambahan karena kau sudah menghiburku. Sampai jumpa besok!"
+
+Audio: Suara kemasan cokelat disobek (crinkle).
+
+Narasi : Aku teringat dahulu ibu sering memberi ku cokelat ketika aku sedih. Jika cokelat benar-benar hilang, aku tidak bisa membayangkan nya.
+
+......
+
+Visual : “MC mengelus kucing nya di kamar.”
+ 
+Narasi : “Teman sekamar ku adalah seekor kucing. Belum punya nama. Tidak, ia punya. Nama kucingku ialah Kubis. Barangkali kau lupa aku akan menceritakan tentangnya.
+
+BABAK 3: FLASHBACK (Warisan Ibu & Makna Kubis)
+
+Visual: Transisi warna sepia (masa lalu). Ibu MC membawa seekor kucing di dalam dus basah.
+
+Narasi: "Kucing itu dinamai Selada. Ibu sebenarnya tidak suka hewan, tapi dia tidak bisa membiarkan anak kucing itu mati kedinginan. Ibu berkata: 'Anak inilah yang memilihku'. Meskipun dia terus bersin karena alergi, Ibu tidak pernah melepaskannya."
+
+Visual: Ibu yang sedang sakit tersenyum tipis sambil mengelus kucing.
+
+Narasi: "Ibu sering menceritakan aturan dunia: kebahagiaan seseorang seringkali terbentuk di atas kemalangan orang lain. Selada hidup 11 tahun sebelum tumor merenggutnya. Ibu hancur saat itu."
+
+Visual: Ibu membawa pulang anak kucing baru (Kubis) yang mirip dengan Selada.
+
+Narasi: "Kubis adalah alasan Ibu kembali tersenyum. Namun takdir memang kejam; Ibu meninggal karena penyakit yang sama dengan Selada. Pesan terakhirnya singkat: 'Rawatlah Kubis sebaik mungkin'. Kini, hanya Kubis yang menghubungkanku dengan kenangan tentang Ibu."
+
+
+
+BABAK 4: DAY 2 – Jika Ponsel Lenyap dari Dunia (Ponsel)
+
+Visual: Pagi hari. Ponsel di meja bergetar hebat. Nama "Kepala Kantor Pos" muncul di layar.
+
+Audio: Suara getar ponsel yang mengganggu.
+
+Dialog (Aloha): (Menunjuk ponsel) "Benda itu. Sepertinya tidak berguna. Mari kita hilangkan. Telepon ditukar nyawa, bagaimana?"
+
+Dialog (MC): "Tapi... aku belum menelepon Ayahku. Kami sudah lama tidak bicara."
+
+Dialog (Aloha): "Semua orang selalu penuh keraguan di saat terakhir. Baiklah, aku beri satu kesempatan terakhir: kau boleh memakai ponsel itu sekali saja sebelum ia lenyap."
+
+Visual: MC bimbang antara menelpon ayahnya atau orang lain setelah pusing akhirnya ia menelepon Mantan Kekasihnya.
+
+PILIHAN>> HILANGKAN PONSEL?
+
+>>YA (akhirnya aku berbicara dan mengajak mantan ku bertemu)>>>MC:”Jika dipikir-pikir dari dulu aku benci dengan yang namanya telepon terutama ponsel.”
+
+>>TIDAK (ending netral)
+
+BABAK 4 (Lanjutan): DAY 2 – Dunia yang "Hening"
+
+Visual: MC berada di dalam kereta api. Biasanya layar penuh dengan orang menatap ponsel, tapi kini visual menunjukkan orang-orang membaca buku, menatap jendela, atau sekadar melamun dengan wajah cerah.
+
+Narasi: "Hanya butuh dua puluh tahun bagi ponsel untuk menjajah manusia. Manusia menciptakan ponsel untuk mengusir sepi, tapi justru menjadi tawanan darinya. Tanpa ponsel, aku baru sadar betapa cemerlangnya dunia yang selama ini kulewatkan."
+
+Visual: Area lapangan luas dengan Menara Jam besar di tengahnya. MC berdiri memegang buku saku sambil menunggu.
+
+Visual: Mantan pacar datang berlari kecil, napasnya terengah-engah, wajahnya pucat karena khawatir.
+
+Dialog (Mantan): "Kau tidak apa-apa? Maaf aku terlambat, sulit sekali mencari tempat janjian tanpa... entahlah, aku merasa ada yang hilang tapi aku tidak tahu apa."
+
+Dialog (MC): "Aku baik-baik saja. Hanya ingin bertemu. Dan memberitahumu... bahwa waktuku hampir habis."
+
+Visual: Background Kafe. MC dan Mantan duduk berhadapan. Sambil memesan cokelat panas (kesukaan mantan)
+
+Dialog (MC): "Aku... mungkin akan mati tak lama lagi. Kanker."
+
+Dialog (Mantan): (Tersenyum pahit) "Kau terlihat tenang. Manusia memang aneh saat menghadapi kematian."
+
+Dialog (MC): "Bisakah kau ceritakan kenapa kita putus? "
+
+Dialog (MC): "Aneh ya. Hanya hal itu yang ingin aku tanya untuk terakhir kalinya."
+
+Dialog (Mantan):”kalau begitu, apa kau masih ingat minuman favoritku?”
+
+Dialog (MC):”hmm.....aku tidak ingat, aku menyerah”
+
+Dialog (Mantan):”Padahal minuman nya ada di depan matamu(cokelat panas).. alasan kita putus juga semacam itu. Tidak pantas diingat.
+
+Dialog (Mantan):”mungkin liburan kita sebelum masuk kuliah juga ada kaitannya.”
+
+Dialog (MC):”Buenos Aires?
+
+Narasi : “Selama 3 tahun pacaran kami tidak pernah meninggalkan kota kecil yang menjadi tempat tinggal kami, selalu berputar di sekeliling kota atau hanya berbincang lewat telpon. Disaat itu telpon sangat penting bagiku. Sebelum masuk kuliah kami merencanakan liburan ke argentina kesuatu tenpat yang bernama “Buenos Aires".”
+
+Visual: Flashback tipis gambar mereka liburan di Buenos Aires. 
+
+Narasi : “Kita punya teman dekat disana yang sangat akrab dan berjanji akan ketemu keesokan harinya untuk liburan bersama namun maut berkata lain, dia ditemukan meninggal karena kecelakaan. Yang menjadikan trauma yang mendalam bagi kita,sejak kejadian itu kita tak lagi saling bicara.
+
+Visual : duduk di pesawat sebelahan tanpa suara
+
+Narasi : kami kembali ke kota kecil tempat tinggal kami, hanya kata “sampai jumpa” yang ia ucapkan, tak lama kami putus. aku berandai jika saja ada telepon di pesawat yang membuatku berani berbicara padanya hari itu, aku pasti akan menenangkan hatinya. dan bertanya apakah kami tidak akan berpisah?
+....
+
+Visual: mengobrol sambil berjalan keluar dari cafe.
+
+Dialog (Mantan): "Aku ingat kau selalu menangis di bagian akhir film murahan. Kau payah dalam menyembunyikan perasaan."
+
+Narasi: "Kami tertawa. Untuk sejenak, aku lupa bahwa aku sedang sekarat. Ponsel mungkin menghubungkan suara, tapi tatapan mata seperti ini... tidak akan pernah bisa digantikan oleh benda apa pun."
+
+Visual: berjalan menuju gedung bioskop tua(rumah mantan).
+
+Dialog (Mantan):”Kau ingat tempat favoritku?”
+
+Dialog(MC):”hehehe... aku lupa”
+
+Dialog (Mantan): "Sudah ku duga kuberi waktu sampai besok dan datanglah lagi ke sini besok jam 9 malam. Bawalah film kesukaanmu. Kita tonton bersama untuk terakhir kalinya."
+
+Visual : Mantan masuk kedalam rumah
+
+Narasi : tempat favoritnya? Aku mendongak dan melihat bioskop tua, aku teringat bahwa bioskop la tempat favoritnya. Aku meraba kantongku mencari ponsel untuk segera memberi jawabannya, aku lupa aku sudah menghapusnya aku resah karena tak bisa langsung mengabarinya, resah karena tak sabar untuk menunggu hari esok.
+
+Visual : Berjalan sembari menatap rumahnya yang merupakan bioskop tua
+
+Narasi : Tiba-tiba teringat olehku perkataan ibu “untuk memperoleh sesuatu,harus kehilangan sesuatu.”sambil mengelus selada dipangkuannya ibu berkata dengan lembut sambil memikirkannya “kamu akan mati kan sebentar lagi” kata-katanya menimpaku. Kepalaku sakit dan dadaku sesak.
+
+Visual: MC pingsan dengan visual glitch (layar rusak).
+
+
+BABAK 6: DAY 3 – jika film lenyap dari dunia (Film)
+
+Visual: Aloha muncul di depanku.
+
+Dialog (Aloha):” tampaknya kau kemaren bersenang-senang ”
+
+Visual : MC terbangun dari tempat tidur
+
+Dialog (Aloha): "Berikutnya, bagaimana kalau kita menghilangkan Film? Bayangkan dunia tanpa adegan-adegan palsu yang kau sukai itu."
+
+Dialog (MC): "filmm...”
+
+Visual : mata yang masih buram
+
+Narasi: "Film adalah kumpulan mimpi. Mahkota, kuda, badut, kapal angkasa... semua adegan itu melintas di benakku begitulah caraku memandang dunia. Menghapusnya berarti menghapus caraku memandang dunia."
+
+Dialog (Aloha): "Pikirkanlah, hidupmu yang nyata atau gambar bergerak yang palsu?"
+
+Narasi: "Aku membayangkan duniaku tanpa film, tanpa badut, tanpa kapal angkasa yang terbang menuju bintang. Jika film lenyap, maka caraku bermimpi juga akan ikut terkubur."
+
+Choice (Pilihan):
+
+Opsi A: [YA - Hapus Film] -> (Lanjut Story dan Day 4 - Jam).
+
+Opsi B: [TIDAK - Pertahankan] -> MC pingsan karena menolak, terbangun di rumah sakit (Memicu Alternative Ending).
+
+
+Dialog (MC): “Baiklah aku setuju menghapus film, tapi aku diberikan kesempatan terakhirkan untuk menonton film? Seperti sebelumnya
+
+Dialog (Aloha):” yaa tentu saja “
+
+Visual : MC pergi menuju toko persewaan dvd yang dijaga oleh temannya, Tsutaya
+
+Narasi : Aku menghampiri tsutaya dan menjelaskan bagaimana keadaanku. Dia sangat kaget dan sedih mendengar nya tapi karena itu ia mau membantuku untuk mencari film yang kubutuhkan. 
+
+Visual: tsutaya dan aku mondar mandir kesana kemari
+
+Narasi: aku melihat film amazing spiderman aku teringat ada line yang iconic “with great power, there must come great responsibility” mungkin aku juga begitu pikirku. Demi memperoleh nyawaku, aku menghilangkan sesuatu dari dunia. Disitu juga harus ada tanggung jawab yang besar.
+
+Narasi : bagaimana aku ini? Aku masih bingung namun film-film rasanya menyemangatiku.
+“may the force be with you”
+Terimakasih star wars. 
+Wahai pasukan jedi. “i’ll be back.”
+The terminator, aku juga ingin kembali kesini. 
+“dunia ini milikku”.yang bener saja kau dicaprio.
+kau tidak mengerti apa-apa. “life is beautiful!” bohong belaka.
+
+Visual : akhirnya kami sampai di depan rak film chaplin
+
+Dialog 	(Tsutaya) : ba..ba..bagaimana kalau ini?
+
+Dialog (MC) : limelight ya? Boleh juga, aku menyukai film-film chaplin tapi yang ini belum sempat aku tonton 
+
+Dialog 	(Tsutaya) : “ a..aku tak tau a...paa yang a..kan terjadi...”
+
+Dialog (MC) : “ kenapa?”
+
+Visual : tsutaya menangis menunduk tersedu-sedu
+Dialog (MC) : jangan menangis tsutaya. Ada cerita yang bagus dan ada seseorang yang bisa kuceritai. Dengan itu saja hidup ini cukup menyenangkan. Dikatakan begitu dalam the legend of 1900, kan? Bagiku sekarang, tsutaya, kamulah seseorang itu. Karena kamu ada, aku juga bisa menganggap hidup ini cukup menyenangkan” (dengan susah payah ku mengeluarkan kata-kata itu)
+Dialog 	(Tsutaya) : “te..rima kasih”
+Dialog (MC) :”sampai jumpa”
+Visual : Aku berjalan menuju bioskop tua ( rumah mantan)
+Dialog (Mantan) : “bagaimana sudah kau pilih?.”
+Dialog (MC) : “ iya sudah. Ini..”
+Visual : MC menyerahkan dvd yang sudah dipilihnya 
+Dialog (Mantan) : “limelight ya. Pilihan bagus.”
+Visual : Mc masuk ke bioskop dan duduk dikursi bersebelahan.
+Narasi : Aku membayangkan jika aku adalah sutradara dari kisahku sendiri, skenarionya pasti akan sangat dramatis, durasinya mungkin hanya 5 menit dan mungkin banyak adegan yang dipotong dalam pengeditan karena terlalu membosankan. 2 jam sudah berlalu.....
+Visual : keluar dari bioskop
+Dialog (Mantan) : merasa sedih?
+Dialog (MC) : “aku tidak tahu”
+Dialog (Mantan) : “kalau kau merasa sedih,pedih atau apapun itu kau bisa datang kesini setiap saat”
+Dialog (MC) : “ terima kasih”
+Dialog (Mantan) : “ tunggu dulu!, kuis yang terakhir”
+Visual : mc berjalan mantan memanggilnya dari belakang
+Dialog (MC) :” lagi?”
+Dialog (Mantan) :” ini benar-benar yang terakhir!”
+Visual : mantan berteriak sambil menangis
+Narasi : melihat wajahnya aku juga hampir menangis
+Dialog (MC) : “ kalau begitu aku siap untuk menang”
+Dialog (Mantan) :” kalau aku menonton film yang berakhir dengan sedih, aku pasti menonton ulang sekali lagi, kau tahu kenapa?”
+Narasi : jawaban untuk itu aku masih ingat dengan baik. Yang kuharapkan terus menerus di dalam pesawat  perjalanan pulang dari Buenos Aires. Yang kuharapkan terus menerus setelah berbisah dengan nya.
+Dialog (MC) : “Aku tahu.”
+Dialog (MC) : “Karena kamu pikir mungkin kali ini akan berakhir happy ending.”
+Visual : mantan tersenyum tipis
+Dialog (Mantan):” kamu benar!”
+Narasi + visual : dia tersenyum sambil menyeka air matanya dengan lengan baju nya dan berseru “may the force be with you!” lalu ia melambaikan tanganya dengan penuh semangat sembari tersenyum dengan air mata yang masih tersisa di pipinya. “i’ll be back” sahutku sambil menahan air mata yang tak tahan ingin keluar.
+Narasi : sesampainya di rumah, aloha menungguku sambil tersenyum kemudian ia mengedipkan matanya dan melenyapkan film. Setelah menghilangkan film aku teringat perkataan ibu “hampir selalu orang baru menyadari sesuatu yang berharga baginya setelah kehilangannya.”apakah aku akan menyadarinya kelak?
+
+
+BABAK 7: DAY 4 – Jika Jam lenyap dari dunia
+
+Visual: Kamar tidur MC, pagi hari. Cahaya matahari masuk lewat jendela. 
+
+Audio: Suara burung berkicau (tenang).
+
+Kubis: "Sampai kapankah tidur terus, tuanku?"
+
+MC: (Narasi) "Aku masih di alam mimpi. Suara itu terasa asing tapi dekat."
+
+Kubis: "Cepat bangun, tuanku! Sahaya sudah menunggu lama."
+
+MC: "Hah?! Kubis? Kamu... bicara?!"
+
+Visual: Aloha muncul di sudut ruangan memakai kemeja biru langit, tersenyum nakal.
+
+Aloha: "Kejutan! Bagus kan bonus dariku? Karena telepon dan film sudah hilang, kubpikir kau butuh teman mengobrol."
+
+MC: "Ini merepotkan! Bisakah kamu batalkan? Aku tidak terbiasa kucingku bicara dengan bahasa sejarah begini."
+
+Aloha: "Ya bisa sih... tapi kapan-kapan! Benar. Kapankah itu? Hanya Tuhan yang tahu, hahaha!"
+
+Visual: Kubis melompat ke atas tempat tidur dan menginjak muka MC.
+
+Kubis: "Ayo bangun! Jika tidak bangun sekarang, sahaya akan marah, tuanku! Rrrrrrrrowww!"
+
+MC: "Aakh, baiklah! Aku bangun!"
+
+Visual: Aloha mendekat, wajahnya berubah serius.
+
+Aloha: "Ngomong-ngomong, kau ingat apa yang hilang hari ini?"
+
+MC: "Semuanya tampak sama saja... apa yang kau hilangkan?"
+
+Aloha: "Jam. Hari ini, Jam lenyap dari dunia."
+
+Visual: Flashback (Warna Sepia) menunjukkan punggung Ayah yang sedang membungkuk di toko jam kecilnya.
+
+MC: (Narasi) "Seketika dadaku nyeri. Ayahku tukang jam. Jika jam lenyap, dunianya juga akan lenyap. Aku menyesal..."
+
+Aloha: "Manusia itu aneh. Kalian menciptakan jam untuk membatasi diri sendiri. Kalian melilitkan 'ketidakbebasan' itu di pergelangan tangan kalian agar merasa tenang dalam aturan."
+
+MC: "Enteng banget kamu ngomong..."
+
+Aloha: "Nikmatilah harimu tanpa angka. Aku pergi dulu." (Aloha menghilang).
+
+Visual: Area taman di atas bukit. Langit cerah cemerlang.
+
+Kubis: "Mau pergi jalan-jalan, tuanku! “
+
+MC: (Narasi) "Ibu dulu sering mengajak Kubis jalan-jalan dan menonton drama sejarah Jepang sampai malam. Ternyata itu alasan kenapa gaya bicaranya seperti ini."
+
+Visual: Kubis berhenti di depan bunga Randa Tapak dan menciumnya.
+
+Kubis: "Ini namanya apa, tuanku?"
+
+MC: "Itu Randa Tapak. Dia mekar saat musim semi."
+
+MC: "Ibu hebat ya, setiap hari menemanimu jalan-jalan seenaknya begini. Ibu benar-benar menyayangimu."
+
+Kubis: "Ibu? Ibu itu siapakah gerangan, tuanku?"
+Mc :”ya, ibuku. Ibumu juga”
+Kubis :”siapakah itu, tuanku?”
+
+Visual: Close-up wajah MC yang syok.
+
+MC: (Narasi/Batin) "Aku kehilangan kata. Kubis melupakan Ibu. Satu-satunya saksi hidup tentang kasih sayang Ibu telah kehilangan ingatannya. Apakah suatu saat nanti... aku juga akan hilang dari dunia Kubis?"
+
+Narasi : setelah berjalan keliling cukup lama, aku dan kubis kembali ke rumah untuk memasak ikan bakar yang dibeli di toko pinggiran jalan dekat taman.
+
+Visual: Kamar MC, malam hari. MC memperlihatkan album foto lama kepada Kubis.
+
+MC: "Lihat foto ini. Ini kita di pantai. Seminggu sebelum Ibu meninggal."
+Kubis :”siapakah ini tuanku?”
+
+Visual : kubis menunjuk ayah di foto
+
+Mc :”ini ayah”
+Mc :”kalo ga salah ini waktu kita pergi ke tempat sumber air panas, persis seminggu sebelum ibu meninggal”
+
+Kubis :”mengapa demikian, tuanku?”
+
+Mc :” kukira ibu ingin kenang-kenangan untuk terakhir kalinya. Soalnya ibu hampir tidak pernah pergi ke tempat jauh. Saat itu kondisi ibu sudah parah, tak dapat ditangani lagi. Setiap hari ibu muntah, menderita, dan tak bisa tidur. Namun, di suatu pagi ibu memintaku pergi ke sumber air panas itu Bersama aku, ayah, dan kamu (kubis). Aku kebingungan. Dan akhirnya dokter mengizinkan ibu pergi setelah bersusah payah aku memoho kepada Dokter.”
+
+Mc :”sudah ingat sesuatu?”
+
+Kubis: "Sahaya tetap tidak ingat apa-apa, tuanku. Maafkan sahaya..."
+
+Kubis: "Hanya saja... sahaya ingat pernah merasa Bahagia. Saat foto itu diambil, sahaya merasa bahagia. Itu saja."
+
+Mc :”pernah bahagia?”
+
+Kubis :” betul tuanku. Ketika berfoto saat itu, sahaya sangat Bahagia. Hanya itu yang sahaya ingat, tuanku”
+
+MC: (Narasi) "Aku menyentuh tubuh Kubis yang hangat. Kasih sayang itu memang merepotkan, tapi itu yang membuat kita bebas."
+
+Kubis :”meong, meong”
+
+Visual: Tiba-tiba Aloha muncul dengan kemeja hitam bergambar laut malam yang menyeramkan.
+
+Aloha: "Efek sihirnya habis. Dia kembali jadi kucing biasa sekarang."
+
+Kubis: "Meong..." (Tidak lagi memanggil 'Tuanku').
+
+Aloha: "Sudah siap untuk hari esok? Aku sudah memutuskan apa yang akan kulenyapkan selanjutnya."
+
+MC: (Jantung berdegup kencang) "Jangan... kumohon jangan..."
+
+Aloha: (Tersenyum kejam) "Mari kita lenyapkan Kucing dari dunia!"
+
+Visual: Layar tiba-tiba menghitam (Cut to Black). Audio: Suara detak jantung yang keras lalu berhenti.
+
+BABAK 8: DAY 5 – Jika Kucing Lenyap Dari Dunia
+Visual: Kamar gelap, pukul 03.00 dini hari. MC terbangun dengan wajah basah oleh air mata.
+Audio: Suara napas MC yang tersengal.
+?MC (Narasi): "Aku terbangun dalam gelap. Kubis tidak ada di tempat biasanya. Jantungku berpacu, takut jika tawaran Aloha tadi malam benar-benar merenggutnya."
+?Visual: Kamera mengarah ke ujung kaki tempat tidur. Kubis tidur melingkar di sana.
+?MC (Narasi): "Dia masih ada. Syukurlah. Ibu pernah bilang: Bukan manusia yang memelihara kucing, tapi kucinglah yang rela mendampingi manusia. Aku baru mengerti itu sekarang. Manusia butuh kucing untuk mengenal kasih sayang dan kematian diri sendiri."
+Visual: Kepala MC berdenyut hebat. Ia memegang kepalanya sambil meringis kesakitan.
+Aloha (Suara/Off-screen): "Maunya gimana? Kucing atau nyawamu? Bukan soal yang sulit, kan? Kalau kau mati, kau tak bisa menyayangi kucing lagi."
+?MC: "Tunggu... beri aku waktu."
+?Aloha: "Ambillah keputusan sebelum matahari terbit... atau nyawamu yang hilang."
+
+[PILIHAN KRUSIAL]
+?Opsi A: [YA - Lenyapkan Kucing] ? Pemain memilih hidup. (Ending A: Kesepian Abadi)
+?Opsi B: [TIDAK - Pertahankan Kucing] ? Pemain memilih takdirnya. (TRUE ENDING)
+
+TRUE ENDING: Surat dari Masa Lalu
+Visual: Pagi hari. MC terbangun dan panik karena Kubis hilang dari kamar. Ia berlari keluar apartemen, mencari ke taman, hingga ke kedai mie soba.
+Audio: Musik tempo cepat yang cemas, suara napas memburu.
+?MC (Narasi): "Aku berlari membabi buta. Paru-paruku terasa terbakar. Apa aku telah melenyapkannya dalam mimpi? Aku sudah ditinggalkan ibu dan selada. Aku tak mau ditinggalkan lagi!"
+Visual: Di depan bioskop tua. Kubis menggeliat santai dan mengeong lirih. MC jatuh terduduk dan memeluknya erat.
+Mantan Pacar (MP): "Aku kaget tiba-tiba Kubis datang mencariku. Kau menangis lagi, ya? Kebiasaanmu tidak berubah."
+Visual: MP menyodorkan sebuah surat tua dengan perangko yang belum dicap.
+?MP: "Ini dari Ibu. Ia menitipkannya saat di RS. Katanya: 'Jika suatu saat anakku dalam kesulitan, serahkan ini.'"
+Visual: MC duduk di sofa lobi, Kubis di pangkuannya. Membaca surat Ibu. Lalu menangis perlahan membasahi surat.
+Audio: Musik Piano yang lembut (Melankolis).
+?Isi Surat Ibu (Voice over): "Aku memikirkan 10 hal indah dalam dirimu untuk menggantikan 10 keinginan terakhirku. Wajah tidurmu, lesung pipimu, sifatmu yang peduli pada orang lain... jika kamu merasa sedih pejamkan matamu dan tersenyumlah perlahan, maka kesedihan itu juga akan lenyap. Jangan lupakan itu. Hanya dengan hal-hal itu, kau bisa bahagia. Terima kasih dan selamat tinggal."
+Visual: Bayangan memori Ibu mengelus punggung MC saat sakit, menyelimutinya, dan tersenyum.
+?MC (Narasi): "Aku takut mati, Bu. Tapi Ibu benar... lebih susah hidup dengan merenggut sesuatu yang berharga dari dunia."
+Visual: Tiba-tiba Kubis menatap MC. Ia bisa berbicara kembali untuk terakhir kalinya.
+?Kubis: "Gusti Patih, tidak usah menangis. Hilangkan saja kucing. Sahaya ingin Tuanku tetap hidup."
+?MC: "Tidak bisa, Kubis. Tidak akan."
+?Kubis: "Sahaya paham isi hatimu. Kalau begitu, untuk terakhir kalinya... pejamkan matamu."
+Visual: Layar Hitam (Gelap).
+?Kubis: "Pejamkan mata pelan-pelan, lalu tersenyumlah. Itulah sihir Ibu."
+?MC (Batin): "Terima kasih, Kubis."
+Visual: MC membuka mata. Kubis hanya mengeong biasa (Meong...). Kemampuan bicaranya telah hilang selamanya.
+Aloha (Muncul dengan kemeja hitam): "Sihirnya habis. Kau sudah mengambil keputusan yang sangat... manusiawi."
+Visual: MC memegang surat Ibu, melihat kalimat terakhir: "Semoga kamu dan ayahmu hidup rukun." * MC: (Narasi) "Ada satu hal terakhir yang harus kulakukan sebelum waktuku habis. "
+BABAK 9: DAY SABTU – Sebuah Penerimaan
+Visual: Matahari pagi menyinari wajah MC. Kubis mendengkur tenang di sampingnya. 
+Narasi: "Ternyata, kebahagiaan atau kemalangan hanyalah soal bagaimana kita memandang dunia. Aku memutuskan untuk tidak merenggut apa pun lagi. Biarlah waktu hidupku berakhir dengan utuh."
+
+Visual: Aloha muncul, berdiri di dekat jendela. Ia tidak lagi tersenyum nakal, tatapannya kini sayu namun hangat.
+
+Aloha: "Menukar nyawa demi seekor kucing? Kau konyol, tapi kau menang. Aku mengaku kalah pada 'sisi manusia' dalam dirimu."
+
+MC: "Siapa kau sebenarnya, Aloha?"
+
+Aloha: "Aku adalah wujud dari segala penyesalan dan keinginan terpendammu. Aku adalah dirimu yang ingin bebas, namun kini kau telah menemukan kedamaianmu sendiri. Selamat tinggal, manusia menarik."
+
+BABAK TERAKHIR: Surat dan Punggung Ayah
+Visual: MC merapikan barang-barang terakhirnya. Ia menemukan kotak logam tua (Yoku Moku). Di dalamnya tersimpan ratusan perangko warna-warni. 
+
+Narasi: "Perangko ini adalah bahasa rahasia Ayah. Lewat kepingan kertas ini, dia yang pendiam menceritakan dunia kepadaku. Alasan aku menjadi tukang pos... ternyata agar aku bisa terus menyampaikan 'napas hangat' yang sama kepada orang lain."
+
+Visual: MC mengenakan kemeja putih dan dasi abu-abu gelap—seragam tukang pos. Ia menatap bayangannya di cermin.
+
+MC: "Wajah ini, postur ini... aku benar-benar menjadi mirip dengannya. Aku dulu berpikir bahwa hidup adalah tentang memiliki. Tapi Iblis itu mengajariku satu hal: dunia ini didefinisikan oleh apa yang hilang darinya. Tanpa telepon, aku melihat langit. Tanpa film, aku merasakan kenyataan. Dan tanpa jam... aku akhirnya memahami Ayah"
+
+Visual: MC menggendong Kubis ke keranjang sepeda. Tas berisi surat wasiat untuk Ayahnya tersampir di bahu. 
+Narasi: "Surat ini tidak boleh hanya berhenti di kotak pos merah itu. Aku sendiri yang akan mengantarkannya. Melewati tanjakan ini, menuju kota di seberang teluk... tempat tinggal Ayah."
+
+Visual Akhir: MC mengayuh sepedanya sekuat tenaga menuruni bukit. Di bawahnya, laut biru pekat berkilau terkena cahaya matahari. Angin berembus kencang, Kubis mengeong segar. 
+Audio: Suara angin dan kayuhan sepeda yang semakin cepat, perlahan memudar menjadi hening.
+
+Narasi : Sekarang aku mengerti kenapa dulu Ayah memberiku banyak perangko. Surat itu bukan sekadar kertas dan tinta, tapi cara Ayah mengirimkan cintanya dari jarak jauh. Selama ini aku sibuk melarikan diri, padahal waktu adalah satu-satunya kesempatan yang aku punya untuk bilang: 'Ayah, aku sayang padamu.'"
+
+Dialog Terakhir (Layar perlahan memutih):
+
+"Aku datang, Ayah."

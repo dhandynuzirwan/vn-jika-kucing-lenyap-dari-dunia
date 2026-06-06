@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dcyvdvf12lrtr"]
+
+[ext_resource type="PackedScene" uid="uid://cayvveux3h6ow" path="res://scenes/characters/npc_aloha.tscn" id="1_nkbtc"]
+[ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="2_yd2cm"]
+
+[node name="TestRoom" type="Node2D" unique_id=2143905555]
+
+[node name="NPC_Aloha" parent="." unique_id=486957782 instance=ExtResource("1_nkbtc")]
+position = Vector2(75, 25)
+
+[node name="Player" parent="." unique_id=312454733 instance=ExtResource("2_yd2cm")]
+position = Vector2(104, 28)
+speed = 80.0

@@ -1,11 +1,72 @@
 [gd_scene format=3 uid="uid://cayvveux3h6ow"]
 
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="1_thh2u"]
+[ext_resource type="Texture2D" uid="uid://c6fbw733hnyf" path="res://assets/sprites/Iblis.png" id="2_2dv3r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dv3r"]
+size = Vector2(20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7ob5"]
+atlas = ExtResource("2_2dv3r")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncom5"]
+atlas = ExtResource("2_2dv3r")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uesbt"]
+atlas = ExtResource("2_2dv3r")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyetg"]
+atlas = ExtResource("2_2dv3r")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54m3u"]
+atlas = ExtResource("2_2dv3r")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qsi8"]
+atlas = ExtResource("2_2dv3r")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pgbys"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7ob5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncom5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uesbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyetg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54m3u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qsi8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [node name="NPC_Aloha" type="Area2D" unique_id=486957782]
 script = ExtResource("1_thh2u")
-timeline_name = "babak1_aloha"
+timeline_name = "test_aloha"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=735589168]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1426728369]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_2dv3r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2090563325]
+sprite_frames = SubResource("SpriteFrames_pgbys")
+animation = &"idle"
+autoplay = "idle"
