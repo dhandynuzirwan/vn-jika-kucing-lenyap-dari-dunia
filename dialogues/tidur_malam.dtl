@@ -1,0 +1,9 @@
+mc: Apakah aku harus mengakhiri hari ini dan tidur?
+- YA (Tidur)
+	[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+	[wait time="1.0"]
+	# Memanggil fungsi ganti_hari() di StoryManager untuk memajukan hari
+	[signal arg="ganti_hari"]
+	[background arg=""]
+- BELUM (Tetap Bangun)
+	mc: Aku masih ingin berkeliling sebentar.

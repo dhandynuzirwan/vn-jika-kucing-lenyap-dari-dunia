@@ -41,7 +41,8 @@ directories/dtl_directory={
 "babak7_day4_jam": "res://dialogues/babak7_day4_jam.dtl",
 "babak8_day5_kucing": "res://dialogues/babak8_day5_kucing.dtl",
 "babak9_true_ending": "res://dialogues/babak9_true_ending.dtl",
-"test_aloha": "res://scenes/characters/test_aloha.dtl"
+"test_aloha": "res://scenes/characters/test_aloha.dtl",
+"tidur_malam": "res://dialogues/tidur_malam.dtl"
 }
 layout/style_directory={
 "": "res://assets/sprites/tema_narasi.tres",
