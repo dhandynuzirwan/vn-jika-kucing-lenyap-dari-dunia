@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://cayvveux3h6ow" path="res://scenes/characters/npc_aloha.tscn" id="12_df4qw"]
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="13_df4qw"]
 [ext_resource type="Script" uid="uid://bl000vgfu16q8" path="res://scripts/scene_transition.gd" id="14_uaq6v"]
+[ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="15_d8i2l"]
+[ext_resource type="Texture2D" uid="uid://dw3e3ra81p7pp" path="res://assets/objects/hp.png" id="16_cvcuk"]
+[ext_resource type="Script" uid="uid://ceoo2ooa51w6u" path="res://scripts/disappearing_item.gd" id="17_ykrbj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcxud"]
 texture = ExtResource("1_mnld5")
@@ -7660,6 +7663,9 @@ size = Vector2(20, 25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uaq6v"]
 size = Vector2(16, 8)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8i2l"]
+size = Vector2(15, 20)
+
 [node name="KamarMC" type="Node2D" unique_id=1886236822]
 y_sort_enabled = true
 
@@ -7677,7 +7683,12 @@ layer_3/name = "gadget"
 layer_3/tile_data = PackedInt32Array(6, 458761, 32, -65535, 131074, 4, 1, 131074, 5, 131084, 983040, 21, 196620, 983040, 22, 262156, 983040, 23)
 
 [node name="NPC_Aloha" parent="." unique_id=486957782 instance=ExtResource("12_df4qw")]
-position = Vector2(100, 40)
+y_sort_enabled = true
+position = Vector2(30, 114)
+timeline_per_hari = Array[String](["babak2_day1", "babak4_day2_ponsel"])
+titik_kumpul_per_hari = Array[NodePath]([NodePath(""), NodePath("../PosisiAloha_Hari2")])
+hapus_setelah_dialog = true
+timeline_berikutnya = "babak2_setelah_aloha"
 
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("11_6g8tv")]
 position = Vector2(24, 35)
@@ -7686,6 +7697,8 @@ speed = 80.0
 [node name="Kasur" type="Area2D" parent="." unique_id=1137098960]
 script = ExtResource("13_df4qw")
 timeline_name = "tidur_malam"
+requires_daily_event = true
+locked_timeline = "belum_bisa_tidur"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kasur" unique_id=140283819]
 position = Vector2(11, 29.5)
@@ -7698,3 +7711,20 @@ target_scene = "uid://bdjvgmgpv4q3b"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1416787775]
 position = Vector2(184, 65)
 shape = SubResource("RectangleShape2D_uaq6v")
+
+[node name="TriggerBangun" type="Area2D" parent="." unique_id=1518604112]
+script = ExtResource("15_d8i2l")
+timeline_name = "babak2_bangun"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerBangun" unique_id=1876794574]
+position = Vector2(24.5, 35)
+shape = SubResource("RectangleShape2D_d8i2l")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1506968749]
+position = Vector2(24, 9)
+scale = Vector2(0.015078092, 0.011742819)
+texture = ExtResource("16_cvcuk")
+script = ExtResource("17_ykrbj")
+
+[node name="PosisiAloha_Hari2" type="Marker2D" parent="." unique_id=1559444332]
+position = Vector2(53, 48)

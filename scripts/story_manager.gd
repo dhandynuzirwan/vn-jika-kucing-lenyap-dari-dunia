@@ -3,6 +3,9 @@ extends Node
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
 var current_day: int = 1
+var is_daily_event_done: bool = false
+
+signal day_changed(new_day: int)
 
 func _ready() -> void:
 	# Tunggu satu frame agar seluruh sistem terinisialisasi
@@ -16,8 +19,13 @@ func _ready() -> void:
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 
 func _on_dialogic_signal(argument: String) -> void:
+	print(">> STORY MANAGER MENERIMA SINYAL: ", argument)
 	if argument == "ganti_hari":
 		ganti_hari()
+	elif argument == "event_selesai":
+		print(">> Misi hari ini tamat! MC sekarang diizinkan tidur.")
+		is_daily_event_done = true
+		Dialogic.VAR.set("event_harian_selesai", true)
 
 func _on_dialogue_started() -> void:
 	var player = get_tree().get_first_node_in_group("Player")
@@ -32,11 +40,14 @@ func _on_dialogue_ended() -> void:
 # Fungsi untuk memanggil pergantian hari dari kasur/interaksi tidur
 func ganti_hari() -> void:
 	current_day += 1
-	# Sinkronkan dengan variabel Dialogic (jika Anda membuat variabel 'hari_ke' di Dialogic)
-	Dialogic.VAR.set("hari_ke", current_day)
+	is_daily_event_done = false
 	
-	# Memuat scene transisi hitam/layar loading (opsional)
-	# get_tree().change_scene_to_file("res://scenes/ui/layar_transisi.tscn")
+	# Sinkronkan dengan variabel Dialogic
+	Dialogic.VAR.set("hari_ke", current_day)
+	Dialogic.VAR.set("event_harian_selesai", false)
+	
+	# Beritahu seluruh game bahwa hari telah berganti
+	day_changed.emit(current_day)
 	
 	print("Sekarang adalah Hari ke-", current_day)
 

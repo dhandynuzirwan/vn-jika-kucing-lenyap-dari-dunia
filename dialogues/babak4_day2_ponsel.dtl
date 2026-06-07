@@ -1,6 +1,9 @@
 aloha: Benda itu. Ponselmu. Sepertinya tidak berguna. Mari kita hilangkan. Telepon ditukar nyawa, bagaimana?
 mc: Tapi... aku belum menelepon Ayahku. Kami sudah lama tidak bicara.
-aloha: Semua orang selalu penuh keraguan di saat terakhir. Baiklah, aku beri satu kesempatan terakhir: kau boleh memakai ponsel itu sekali saja sebelum ia lenyap.
+aloha: Semua orang selalu penuh keraguan di saat terakhir. Baiklah, aku beri kau waktu. Hubungi siapa pun yang kau mau. Besok pagi, benda ini akan menghilang.
+
+[signal arg="event_selesai"]
+[signal arg="npc_hilang"]
 mc: (Aku bimbang antara menelepon ayahku atau orang lain... setelah pusing, akhirnya aku menelepon Mantan Kekasihku.)
 - HILANGKAN PONSEL? (YA)
 	set {ponsel_lenyap} = true

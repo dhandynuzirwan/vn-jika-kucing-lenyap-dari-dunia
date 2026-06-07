@@ -10,4 +10,4 @@ func _ready() -> void:
 func _on_prolog_selesai() -> void:
 	# 3. Pindahkan pemain ke map top-down saat layar sudah hitam
 	# Pastikan path ini mengarah ke map kamar MC/test_room Anda!
-	get_tree().change_scene_to_file("res://scenes/maps/test_room.tscn")
+	get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")

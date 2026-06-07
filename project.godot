@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VN Jika Kucing Lenyap Dari Dunia"
-run/main_scene="uid://b0jcmrnsaw5ln"
+run/main_scene="uid://dsdplvs8eelh7"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -33,7 +33,9 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "babak1_prolog": "res://dialogues/babak1_prolog.dtl",
+"babak2_bangun": "res://dialogues/babak2_bangun.dtl",
 "babak2_day1": "res://dialogues/babak2_day1.dtl",
+"babak2_setelah_aloha": "res://dialogues/babak2_setelah_aloha.dtl",
 "babak3_flashback": "res://dialogues/babak3_flashback.dtl",
 "babak4_day2_ponsel": "res://dialogues/babak4_day2_ponsel.dtl",
 "babak5_day2_cafe": "res://dialogues/babak5_day2_cafe.dtl",
@@ -41,6 +43,8 @@ directories/dtl_directory={
 "babak7_day4_jam": "res://dialogues/babak7_day4_jam.dtl",
 "babak8_day5_kucing": "res://dialogues/babak8_day5_kucing.dtl",
 "babak9_true_ending": "res://dialogues/babak9_true_ending.dtl",
+"belum_bisa_tidur": "res://dialogues/belum_bisa_tidur.dtl",
+"pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
 "test_aloha": "res://scenes/characters/test_aloha.dtl",
 "tidur_malam": "res://dialogues/tidur_malam.dtl"
 }

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c0ve3rq8dkjd8"]
+
+[ext_resource type="Script" uid="uid://cb12yqlawwq5n" path="res://scenes/maps/flashback.gd" id="1_tc1q1"]
+
+[node name="Flashback" type="Control" unique_id=1356097656]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tc1q1")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1318125952]
+color = Color(0.54826367, 0.516334, 0.40678474, 1)

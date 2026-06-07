@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dsdplvs8eelh7"]
+
+[ext_resource type="Script" uid="uid://c5x8edac430ky" path="res://scripts/main_menu.gd" id="1_fe2o3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sl1te"]
+load_path = "res://.godot/imported/ui_menu.png-38fdf17f8cf95643a91267aa73c6c798.ctex"
+
+[node name="MainMenu" type="Control" unique_id=338893449]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fe2o3")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1437813541]
+layout_mode = 0
+offset_right = 2752.0
+offset_bottom = 1536.0
+scale = Vector2(0.69715476, 0.7082076)
+texture = SubResource("CompressedTexture2D_sl1te")
+
+[node name="Label" type="Label" parent="." unique_id=687334147]
+layout_mode = 0
+offset_left = 586.0
+offset_top = 362.0
+offset_right = 1442.0
+offset_bottom = 445.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Jika Kucing Lenyap dari Dunia"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1151940765]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.294
+anchor_bottom = 0.277
+offset_left = 877.0
+offset_top = 463.0
+offset_right = 591.52
+offset_bottom = 264.84
+
+[node name="TombolMulai" type="Button" parent="VBoxContainer" unique_id=1967666556]
+layout_mode = 2
+text = "Mulai Game"
+
+[node name="TombolKeluar" type="Button" parent="VBoxContainer" unique_id=446306357]
+layout_mode = 2
+text = "Keluar"
+
+[connection signal="pressed" from="VBoxContainer/TombolMulai" to="." method="_on_tombol_mulai_pressed"]
+[connection signal="pressed" from="VBoxContainer/TombolKeluar" to="." method="_on_tombol_keluar_pressed"]

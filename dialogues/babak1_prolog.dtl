@@ -1,18 +1,22 @@
 # Menampilkan layar hitam pekat di awal
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+audio "res://assets/audio/heartbeat.mp3"
 
 narator: Stadium empat. Kata-kata dokter itu terus berputar seperti kaset rusak di kepalaku. Dunia seolah berhenti berputar tepat di depan wajahku.
 
 # Ganti gambar ke rumah sakit dengan efek transisi memudar (fade) 2 detik
 [background arg="res://assets/backgrounds/rumah_sakit.png" fade="2.0"]
 
-narator: Kenapa aku? Kenapa harus sekarang? 
+narator: Kenapa aku? Kenapa harus sekarang?
 
 # Ganti gambar ke jembatan senja
-[background arg="res://assets/backgrounds/jembatan_senja.png" fade="2.0"]
 
 narator: Jika aku harus lenyap, maka biarkan dunia ini ikut lenyap bersamaku!
+[background arg="res://assets/backgrounds/jembatan_senja.png" fade="2.0"]
+[wait time="1.5"]
+mc: ?????!!!
+[wait time="1.0"]
 
 # Kembali ke layar hitam pekat sebelum pindah ke map top-down
-[background arg="res://assets/backgrounds/hitam.png" fade="3.0"]
+[wait time="1.0"]
 [wait time="1.0"]
