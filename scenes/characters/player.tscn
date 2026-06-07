@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bed7r6um2qnp2" path="res://assets/sprites/Mc.png" id="2_yewv4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yewv4"]
+size = Vector2(12, 9)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_76oj4"]
 atlas = ExtResource("2_yewv4")
@@ -379,6 +380,7 @@ script = ExtResource("1_rp718")
 shape = SubResource("RectangleShape2D_yewv4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1084857593]
+position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_5bn3a")
 animation = &"walk_right"
 

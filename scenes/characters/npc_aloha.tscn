@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c6fbw733hnyf" path="res://assets/sprites/Iblis.png" id="2_2dv3r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2dv3r"]
-size = Vector2(20, 24)
+size = Vector2(28, 17)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l7ob5"]
 atlas = ExtResource("2_2dv3r")
@@ -63,10 +63,11 @@ timeline_name = "test_aloha"
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=735589168]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1426728369]
-position = Vector2(0, 4)
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_2dv3r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2090563325]
+position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_pgbys")
 animation = &"idle"
 autoplay = "idle"
