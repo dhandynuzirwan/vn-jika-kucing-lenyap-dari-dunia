@@ -210,6 +210,6 @@ shape = SubResource("RectangleShape2D_2dv3r")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2090563325]
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_pgbys")
-animation = &"idle_up"
+animation = &"idle_down"
 autoplay = "idle_down"
 offset = Vector2(0, -12)
