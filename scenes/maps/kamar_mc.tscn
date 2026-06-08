@@ -7706,7 +7706,7 @@ shape = SubResource("RectangleShape2D_df4qw")
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=1058604081]
 script = ExtResource("14_uaq6v")
-target_scene = "uid://bdjvgmgpv4q3b"
+target_scene = "res://scenes/maps/jalanan_kota.tscn"
 minimum_day_to_exit = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1416787775]

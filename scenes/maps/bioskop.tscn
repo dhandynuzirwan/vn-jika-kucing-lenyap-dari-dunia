@@ -19,7 +19,7 @@ speed = 80.0
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=567891234]
 script = ExtResource("2_svcpl")
-target_scene = "uid://bdjvgmgpv4q3b"
+target_scene = "res://scenes/maps/jalanan_kota.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=678912345]
 position = Vector2(0, 0)

@@ -1,5 +1,5 @@
-[background arg="res://assets/backgrounds/ilustrasi_cafe.png" fade="1.0"]
-mantan: "Kamu tidak apa-apa? Maaf aku terlambat, sulit sekali mencari tempat janjian tanpa... entahlah, aku merasa ada yang hilang tapi aku tidak tahu apa."
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+mantan: "Kamu tidak apa-apa? Kamu terlambat, sulit sekali mencari tempat janjian tanpa... entahlah, aku merasa ada yang hilang tapi aku tidak tahu apa."
 narator: "Bukan ‘apa kabar’ bukan pula ‘sudah lama tidak ketemu, ya’. Kata yang pertama diucap ternyata ‘kamu tidak apa apa?’ betapa menyedihkan. Setelah bertukar sapa ternyata aku yang salah waktu janji temu."
 mc: "Aku baik-baik saja. Hanya ingin bertemu. Dan memberitahumu... bahwa waktuku tak lama lagi."
 mantan: "Kenapa tiba-tiba?"
@@ -36,5 +36,5 @@ mc: "Buenos Aires?"
 narator: "Selama 3 tahun pacaran kami tidak pernah meninggalkan kota kecil yang menjadi tempat tinggal kami... Sebelum masuk kuliah kami merencanakan liburan ke Argentina ke suatu tempat bernama Buenos Aires."
 narator: "Kita punya teman dekat disana yang sangat akrab dan berjanji akan ketemu keesokan harinya untuk liburan bersama namun maut berkata lain, dia ditemukan meninggal karena kecelakaan. Yang menjadikan trauma yang mendalam bagi kita, sejak kejadian itu kita tak lagi saling bicara."
 narator: "Kami kembali ke kota kecil tempat tinggal kami, hanya kata 'sampai jumpa' yang ia ucapkan, tak lama kami putus. aku berandai jika saja ada telepon di pesawat yang membuatku berani berbicara padanya hari itu..."
-[background arg="" fade="1.0"]
-jump hari1_malam_bioskop
+[background fade="1.0"]
+jump hari1_malam_bioskop/

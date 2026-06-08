@@ -1,17 +1,12 @@
-[gd_scene format=3 ]
+[gd_scene format=3 uid="uid://4ndrgc6sjtji"]
 
-[ext_resource type="PackedScene"  path="res://scenes/characters/NPC_Mantan.tscn" id="1_nkbtc"]
-[ext_resource type="PackedScene"  path="res://scenes/characters/player.tscn" id="2_yd2cm"]
-[ext_resource type="Script"  path="res://scripts/scene_transition.gd" id="2_svcpl"]
+[ext_resource type="Script" uid="uid://bl000vgfu16q8" path="res://scripts/scene_transition.gd" id="2_svcpl"]
+[ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="2_yd2cm"]
+[ext_resource type="PackedScene" uid="uid://br6xi6ag1dba" path="res://scenes/characters/npc_tsutaya.tscn" id="3_m8caf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s67d"]
-size = Vector2(20, 20)
 
-[node name="CafeMap" type="Node2D" unique_id=2143905555]
-
-[node name="NPC_Mantan" parent="." unique_id=486957782 instance=ExtResource("1_nkbtc")]
-position = Vector2(75, 25)
-timeline_name = "hari1_siang_cafe"
+[node name="TokoDvd" type="Node2D" unique_id=2143905555]
 
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("2_yd2cm")]
 position = Vector2(107, 28)
@@ -19,8 +14,10 @@ speed = 80.0
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=567891234]
 script = ExtResource("2_svcpl")
-target_scene = "uid://bdjvgmgpv4q3b"
+target_scene = "res://scenes/maps/jalanan_kota.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=678912345]
-position = Vector2(0, 0)
 shape = SubResource("RectangleShape2D_1s67d")
+
+[node name="NPC_Mantan" parent="." unique_id=486957782 instance=ExtResource("3_m8caf")]
+position = Vector2(141, 64)
