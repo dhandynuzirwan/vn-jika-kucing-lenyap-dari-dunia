@@ -2,8 +2,9 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 1
-var is_daily_event_done: bool = false
+var current_day: int = 0
+var can_sleep: bool = false
+var can_leave_room: bool = false
 
 signal day_changed(new_day: int)
 
@@ -24,8 +25,11 @@ func _on_dialogic_signal(argument: String) -> void:
 		ganti_hari()
 	elif argument == "event_selesai":
 		print(">> Misi hari ini tamat! MC sekarang diizinkan tidur.")
-		is_daily_event_done = true
+		can_sleep = true
 		Dialogic.VAR.set("event_harian_selesai", true)
+	elif argument == "boleh_keluar":
+		print(">> MC sekarang diizinkan keluar kamar.")
+		can_leave_room = true
 
 func _on_dialogue_started() -> void:
 	var player = get_tree().get_first_node_in_group("Player")
@@ -40,7 +44,8 @@ func _on_dialogue_ended() -> void:
 # Fungsi untuk memanggil pergantian hari dari kasur/interaksi tidur
 func ganti_hari() -> void:
 	current_day += 1
-	is_daily_event_done = false
+	can_sleep = false
+	can_leave_room = false
 	
 	# Sinkronkan dengan variabel Dialogic
 	Dialogic.VAR.set("hari_ke", current_day)
@@ -49,5 +54,9 @@ func ganti_hari() -> void:
 	# Beritahu seluruh game bahwa hari telah berganti
 	day_changed.emit(current_day)
 	
+	# Pindahkan Player kembali ke kasur (titik awal) agar saat layar terang dia sudah di posisi semula
+	var player = get_tree().get_first_node_in_group("Player")
+	if player:
+		player.global_position = Vector2(24, 35)
+	
 	print("Sekarang adalah Hari ke-", current_day)
-

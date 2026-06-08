@@ -15,11 +15,10 @@ func _on_body_entered(body: Node2D) -> void:
 		# Ambil data hari dari StoryManager
 		var sm = get_node_or_null("/root/StoryManager")
 		var day = sm.current_day if sm else 1
-		var event_done = sm.is_daily_event_done if sm else true
+		var can_leave = sm.can_leave_room if sm else true
 		
-		# Kunci pintu jika hari < minimum_day_to_exit 
-		# ATAU hari == minimum_day_to_exit tapi event belum selesai
-		if day < minimum_day_to_exit or (day == minimum_day_to_exit and not event_done):
+		# Kunci pintu jika belum ada izin keluar
+		if not can_leave:
 			if locked_timeline != "" and not Dialogic.current_timeline:
 				Dialogic.start(locked_timeline)
 			return

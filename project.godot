@@ -32,21 +32,24 @@ directories/dch_directory={
 "tsutaya": "res://assets/sprites/tsutaya.dch"
 }
 directories/dtl_directory={
-"babak1_prolog": "res://dialogues/babak1_prolog.dtl",
-"babak2_bangun": "res://dialogues/babak2_bangun.dtl",
-"babak2_day1": "res://dialogues/babak2_day1.dtl",
-"babak2_setelah_aloha": "res://dialogues/babak2_setelah_aloha.dtl",
-"babak3_flashback": "res://dialogues/babak3_flashback.dtl",
-"babak4_day2_ponsel": "res://dialogues/babak4_day2_ponsel.dtl",
-"babak5_day2_cafe": "res://dialogues/babak5_day2_cafe.dtl",
-"babak6_day3_film": "res://dialogues/babak6_day3_film.dtl",
-"babak7_day4_jam": "res://dialogues/babak7_day4_jam.dtl",
-"babak8_day5_kucing": "res://dialogues/babak8_day5_kucing.dtl",
-"babak9_true_ending": "res://dialogues/babak9_true_ending.dtl",
 "belum_bisa_tidur": "res://dialogues/belum_bisa_tidur.dtl",
+"hari0_bangun": "res://dialogues/hari0_bangun.dtl",
+"hari0_flashback": "res://dialogues/hari0_flashback.dtl",
+"hari0_malam_aloha": "res://dialogues/hari0_malam_aloha.dtl",
+"hari1_malam_bioskop": "res://dialogues/hari1_malam_bioskop.dtl",
+"hari1_pagi_kamar": "res://dialogues/hari1_pagi_kamar.dtl",
+"hari1_siang_cafe": "res://dialogues/hari1_siang_cafe.dtl",
+"hari2_malam_bioskop": "res://dialogues/hari2_malam_bioskop.dtl",
+"hari2_pagi_kamar": "res://dialogues/hari2_pagi_kamar.dtl",
+"hari2_siang_tsutaya": "res://dialogues/hari2_siang_tsutaya.dtl",
+"hari3_pagi_kamar": "res://dialogues/hari3_pagi_kamar.dtl",
+"hari3_siang_taman": "res://dialogues/hari3_siang_taman.dtl",
+"hari4_kucing": "res://dialogues/hari4_kucing.dtl",
 "pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
+"prolog_vonis": "res://dialogues/prolog_vonis.dtl",
 "test_aloha": "res://scenes/characters/test_aloha.dtl",
-"tidur_malam": "res://dialogues/tidur_malam.dtl"
+"tidur_malam": "res://dialogues/tidur_malam.dtl",
+"true_ending": "res://dialogues/true_ending.dtl"
 }
 layout/style_directory={
 "": "res://assets/sprites/tema_narasi.tres",

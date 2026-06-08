@@ -1,0 +1,11 @@
+[background arg="res://assets/backgrounds/rumah_lama.png" fade="1.0"]
+audio "res://assets/audio/bgm_sedih.mp3"
+narator: "Teman sekamar ku adalah seekor kucing. Belum punya nama. Tidak, ia punya. Nama kucingku ialah Kubis. Barangkali kau lupa aku akan menceritakan tentangnya."
+narator: "Kucing itu dinamai Selada. Ibu sebenarnya tidak suka hewan, tapi dia tidak bisa membiarkan anak kucing itu mati kedinginan. Ibu berkata\: 'Anak inilah yang memilihku'."
+narator: "Ibu sering menceritakan aturan dunia, kebahagiaan seseorang seringkali terbentuk di atas kemalangan orang lain. Selada hidup 11 tahun sebelum tumor merenggutnya. Ibu hancur saat itu."
+narator: "Setelah 1 bulan berlalu, tiba-tiba Ibu membawa pulang anak kucing baru yang mirip sekali dengan Selada... Karena dia mirip dengan selada, kucing itu diberi nama kubis."
+narator: "Saat itu aku melihat wajah tersenyum ibu setelah sebulan murung. Melihat ibu tersenyum seperti itu aku menangis... Dan empat tahun lalu ibu benar-benar pergi ke tempat jauh."
+narator: "Takdir macam apa ini? Ibu mengalami sakit seperti selada. Dan ibu menitipkan kubis kepada ku untuk dirawat dengan baik. Apakah aku akan mati lebih dulu dari kubis?"
+[signal arg="ganti_hari"]
+[background fade="2.0"]
+[wait time="1.0"]

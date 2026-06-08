@@ -1118,5 +1118,13 @@ target_scene = "uid://2wjr36u0raka"
 position = Vector2(40.5, 31)
 shape = SubResource("RectangleShape2D_1s67d")
 
+[node name="PintuCafe" type="Area2D" parent="." unique_id=987654321]
+script = ExtResource("2_svcpl")
+target_scene = "uid://testcafeuid99"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PintuCafe" unique_id=123456789]
+position = Vector2(150, 31)
+shape = SubResource("RectangleShape2D_1s67d")
+
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("3_1s67d")]
 position = Vector2(48, 59)

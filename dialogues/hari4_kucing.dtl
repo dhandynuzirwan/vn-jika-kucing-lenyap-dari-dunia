@@ -1,0 +1,17 @@
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+narator: "BABAK 8: DAY 5 – Jika Kucing Lenyap Dari Dunia"
+narator: "Kamar gelap, pukul 03.00 dini hari. Aku terbangun dengan wajah basah oleh air mata. Terdengar napas tersengal."
+mc: "Aku terbangun dalam gelap. Kubis tidak ada di tempat biasanya. Jantungku berpacu, takut jika tawaran Aloha tadi malam benar-benar merenggutnya."
+narator: "Aku melihat ke ujung kaki tempat tidur. Kubis tidur melingkar di sana."
+mc: "Dia masih ada. Syukurlah. Ibu pernah bilang: Bukan manusia yang memelihara kucing, tapi kucinglah yang rela mendampingi manusia. Aku baru mengerti itu sekarang. Manusia butuh kucing untuk mengenal kasih sayang dan kematian diri sendiri."
+narator: "Kepalaku berdenyut hebat. Aku meringis kesakitan."
+aloha: "Maunya gimana? Kucing atau nyawamu? Bukan soal yang sulit, kan? Kalau kau mati, kau tak bisa menyayangi kucing lagi."
+mc: "Tunggu... beri aku waktu."
+aloha: "Ambillah keputusan sebelum matahari terbit... atau nyawamu yang hilang."
+- YA - Lenyapkan Kucing
+	mc: "Maafkan aku, Kubis... Aku... lenyapkan Kucing."
+	[signal arg="bad_ending"]
+- TIDAK - Pertahankan Kucing
+	mc: "Aku tidak akan merenggut apapun lagi. Pertahankan Kucing. Aku memilih takdirku."
+	[signal arg="event_selesai"]
+	jump true_ending

@@ -24,22 +24,37 @@ func _ready() -> void:
 	var sm = get_node_or_null("/root/StoryManager")
 	if sm:
 		sm.day_changed.connect(_on_day_changed)
+		_on_day_changed(sm.current_day) # Terapkan posisi dan visibilitas awal
 
 func _on_day_changed(new_day: int) -> void:
+	var index = new_day
+	
 	# Pindahkan posisi NPC menggunakan titik penanda (Marker2D) yang ada di map
 	if not titik_kumpul_per_hari.is_empty():
-		var index = new_day - 1
 		if index >= 0 and index < titik_kumpul_per_hari.size():
 			var jalur_node = titik_kumpul_per_hari[index]
 			if not jalur_node.is_empty():
 				var target = get_node_or_null(jalur_node)
 				if target:
 					global_position = target.global_position
-	
-	# Munculkan kembali NPC di hari baru
-	show()
+					
+	# Cek apakah NPC ini punya dialog hari ini
+	var has_dialog = true
+	if not timeline_per_hari.is_empty():
+		if index >= 0 and index < timeline_per_hari.size():
+			if timeline_per_hari[index] == "":
+				has_dialog = false
+		else:
+			has_dialog = false
+			
+	# Munculkan/Sembunyikan NPC di hari baru
 	var shape = get_node_or_null("CollisionShape2D")
-	if shape: shape.set_deferred("disabled", false)
+	if has_dialog:
+		show()
+		if shape: shape.set_deferred("disabled", false)
+	else:
+		hide()
+		if shape: shape.set_deferred("disabled", true)
 
 func _on_dialogic_signal(argument: String) -> void:
 	if argument == "npc_hilang" and hapus_setelah_dialog:
@@ -100,7 +115,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			var tl_to_play = timeline_name
 			var sm = get_node_or_null("/root/StoryManager")
 			if sm and not timeline_per_hari.is_empty():
-				var index = sm.current_day - 1 # Hari 1 berarti index 0
+				var index = sm.current_day
 				if index >= 0 and index < timeline_per_hari.size():
 					if timeline_per_hari[index] != "":
 						tl_to_play = timeline_per_hari[index]
@@ -108,7 +123,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			# --- PENGECEKAN SYARAT EVENT HARIAN ---
 			if requires_daily_event:
 				var sm_check = get_node_or_null("/root/StoryManager")
-				if sm_check and not sm_check.is_daily_event_done:
+				if sm_check and not sm_check.can_sleep:
 					if locked_timeline != "":
 						Dialogic.start(locked_timeline)
 					return # Hentikan proses, jangan putar dialog utama
