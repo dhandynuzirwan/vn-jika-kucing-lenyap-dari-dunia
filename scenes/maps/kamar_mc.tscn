@@ -7710,6 +7710,7 @@ shape = SubResource("RectangleShape2D_df4qw")
 script = ExtResource("14_uaq6v")
 target_scene = "res://scenes/maps/jalanan_kota.tscn"
 minimum_day_to_exit = 1
+requires_leave_permission = true
 locked_timeline_per_hari = Array[String](["", "hari1_pintu", "", "", ""])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1416787775]
@@ -7748,3 +7749,4 @@ timeline_per_hari = Array[String](["", "hari1_cermin", "", "", ""])
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerCermin" unique_id=1411985585]
 position = Vector2(72, 42)
 shape = SubResource("RectangleShape2D_d8i2l")
+

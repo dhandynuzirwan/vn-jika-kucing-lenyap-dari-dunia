@@ -49,6 +49,7 @@ text = "TItik Kumpul"
 position = Vector2(10, -29)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/cafe.tscn"
+locked_timeline = "pintu_toko_terkunci"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuCafe" unique_id=1143706795]
 shape = SubResource("RectangleShape2D_1s67d")
@@ -67,6 +68,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(92, -31)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/bioskop.tscn"
+locked_timeline = "pintu_toko_terkunci"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuBioskop" unique_id=365783876]
 shape = SubResource("RectangleShape2D_1s67d")
@@ -85,6 +87,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(182, -31)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/tsutaya.tscn"
+locked_timeline = "pintu_toko_terkunci"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuTsutaya" unique_id=1754385310]
 shape = SubResource("RectangleShape2D_1s67d")

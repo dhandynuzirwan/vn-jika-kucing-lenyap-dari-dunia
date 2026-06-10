@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://pysat58drc5c"]
+
+[ext_resource type="Script" uid="uid://bxmth65yfomy" path="res://scripts/cutscene_jalan.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="2_player"]
+[ext_resource type="PackedScene" uid="uid://0hv18rmnpljf" path="res://scenes/characters/npc_mantan.tscn" id="3_mantan"]
+[ext_resource type="PackedScene" uid="uid://cayvveux3h6ow" path="res://scenes/characters/npc_aloha.tscn" id="4_aloha"]
+
+[node name="JalanMalamCutscene" type="Node2D" unique_id=801167632]
+script = ExtResource("1_script")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1370310773]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=2108183885]
+motion_mirroring = Vector2(320, 0)
+
+[node name="PlaceholderJalan" type="ColorRect" parent="ParallaxBackground/ParallaxLayer" unique_id=828608824]
+offset_top = 130.0
+offset_right = 320.0
+offset_bottom = 180.0
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="LabelTrotoar" type="Label" parent="ParallaxBackground/ParallaxLayer" unique_id=636801876]
+offset_left = 111.0
+offset_top = 143.0
+offset_right = 210.0
+offset_bottom = 166.0
+text = "TILEMAP TROTOAR"
+
+[node name="GedungBioskop" type="Node2D" parent="." unique_id=276840971]
+position = Vector2(380, 0)
+
+[node name="PlaceholderGedung" type="ColorRect" parent="GedungBioskop" unique_id=1103011400]
+offset_left = 10.0
+offset_top = 20.0
+offset_right = 130.0
+offset_bottom = 130.0
+color = Color(0.3, 0.1, 0.1, 1)
+
+[node name="LabelBioskop" type="Label" parent="GedungBioskop" unique_id=388298256]
+offset_left = 30.0
+offset_top = 43.0
+offset_right = 100.0
+offset_bottom = 66.0
+text = "BIOSKOP"
+
+[node name="Player" parent="." unique_id=429322089 instance=ExtResource("2_player")]
+position = Vector2(130, 130)
+
+[node name="NPC_Mantan" parent="." unique_id=501023898 instance=ExtResource("3_mantan")]
+position = Vector2(170, 130)
+
+[node name="NPC_Aloha" parent="." unique_id=1343887136 instance=ExtResource("4_aloha")]
+position = Vector2(200, 130)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1201693778]
+position = Vector2(160, 90)

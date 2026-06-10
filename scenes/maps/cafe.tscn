@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://damup8gmw5ajj" path="res://assets/Tiles/Ice_Cream_Shop_Design_layer_2.png" id="8_ouy8v"]
 [ext_resource type="Texture2D" uid="uid://bc3520pdrqvwm" path="res://assets/Tiles/Ice_Cream_Shop_Design_layer_3.png" id="9_old4b"]
 [ext_resource type="PackedScene" uid="uid://0hv18rmnpljf" path="res://scenes/characters/npc_mantan.tscn" id="12_omd0x"]
+[ext_resource type="Script" uid="uid://bwbpuowcdejay" path="res://scripts/cafe_chair_trigger.gd" id="98_chair"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o3mpf"]
 texture = ExtResource("1_kpk6t")
@@ -3660,6 +3661,7 @@ sources/7 = SubResource("TileSetAtlasSource_43mj1")
 sources/8 = SubResource("TileSetAtlasSource_ir0q7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s67d"]
+size = Vector2(20, 15)
 
 [node name="CafeMap" type="Node2D" unique_id=2143905555]
 position = Vector2(0, -1)
@@ -3673,19 +3675,35 @@ layer_1/tile_data = PackedInt32Array(1, 65543, 0, 65537, 65543, 1, 131073, 65543
 
 [node name="NPC_Mantan" parent="." unique_id=486957782 instance=ExtResource("12_omd0x")]
 y_sort_enabled = true
-position = Vector2(110, 99)
+position = Vector2(108, 133)
 timeline_name = "hari1_siang_cafe"
 timeline_per_hari = Array[String](["hari1_siang_cafe", "hari1_siang_cafe", ""])
 
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("2_yd2cm")]
-position = Vector2(95, 139)
+position = Vector2(87, 134)
 speed = 80.0
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=567891234]
 position = Vector2(96, 161)
 scale = Vector2(1.5999975, 1)
 script = ExtResource("2_svcpl")
-target_scene = "res://scenes/maps/jalanan_kota.tscn"
+target_scene = "res://scenes/maps/jalan_malam_cutscene.tscn"
+requires_cafe_event_done = true
+locked_timeline = "belum_waktunya_pulang"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=678912345]
 shape = SubResource("RectangleShape2D_1s67d")
+
+[node name="MarkerKursiMantan" type="Marker2D" parent="." unique_id=1340867059]
+position = Vector2(54, 101)
+
+[node name="TriggerKursiMC" type="Area2D" parent="." unique_id=1628658716]
+position = Vector2(24, 102)
+script = ExtResource("98_chair")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerKursiMC" unique_id=922502321]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_1s67d")
+
+[node name="MarkerJalanMantan" type="Marker2D" parent="." unique_id=1745198872]
+position = Vector2(64, 84)

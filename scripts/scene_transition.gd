@@ -3,7 +3,9 @@ extends Area2D
 # Variabel ini akan muncul di Inspector. 
 # Anda tinggal mengklik ikon folder untuk memilih scene map tujuan (misal: jalanan_kota.tscn)
 @export_file("*.tscn") var target_scene: String
-@export var minimum_day_to_exit: int = 2
+@export var minimum_day_to_exit: int = 1
+@export var requires_leave_permission: bool = false
+@export var requires_cafe_event_done: bool = false
 @export var locked_timeline: String = "pintu_terkunci"
 @export var locked_timeline_per_hari: Array[String] = []
 
@@ -17,9 +19,10 @@ func _on_body_entered(body: Node2D) -> void:
 		var sm = get_node_or_null("/root/StoryManager")
 		var day = sm.current_day if sm else 1
 		var can_leave = sm.can_leave_room if sm else true
+		var cafe_done = sm.cafe_event_done if sm else false
 		
-		# Kunci pintu jika belum ada izin keluar
-		if not can_leave:
+		# Kunci pintu jika belum ada izin keluar (khusus pintu kamar) atau belum cukup hari
+		if (requires_leave_permission and not can_leave) or (requires_cafe_event_done and not cafe_done) or day < minimum_day_to_exit:
 			var target_tl = locked_timeline
 			
 			if locked_timeline_per_hari.size() > 0 and day < locked_timeline_per_hari.size():

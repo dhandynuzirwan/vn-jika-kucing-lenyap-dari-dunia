@@ -1,40 +1,19 @@
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-mantan: "Kamu tidak apa-apa? Kamu terlambat, sulit sekali mencari tempat janjian tanpa... entahlah, aku merasa ada yang hilang tapi aku tidak tahu apa."
-narator: "Bukan ‘apa kabar’ bukan pula ‘sudah lama tidak ketemu, ya’. Kata yang pertama diucap ternyata ‘kamu tidak apa apa?’ betapa menyedihkan. Setelah bertukar sapa ternyata aku yang salah waktu janji temu."
-mc: "Aku baik-baik saja. Hanya ingin bertemu. Dan memberitahumu... bahwa waktuku tak lama lagi."
-mantan: "Kenapa tiba-tiba?"
-mc: "Aku... terkena kanker."
-mantan: "Oh, gawat ya. Tapi kau tidak kelihatan sedih sedikitpun?"
-narator: "Karena kematianku ditunda oleh iblis. Tidak mungkin aku mengaku demikian. Lagipula bukan ini yang aku mau bicarakan."
-mc: "emmm..... kalau biasanya orang akan mati, orang tersebut ingin mendengar atau mencari tau hal apapun tentang dirinya untuk memastikan makna hidupnya. Tentu aku pun ingin tahu. Karena itu aku ingin kamu ceritakan beberapa hal yang masih teringat dalam kenangan kita. Hal sepele apapun boleh"
-mantan: "Sering ke toilet. Terlalu sering. Terus, terlalu banyak mendesah. Apakah sesulit itu hidupmu? Selalu kupikir begitu."
-mc: "Emmm...begitukah?"
-mantan: "Kamu juga sama sekali gak bisa minum miras. Oh, ya kalau kita ke restoran, kamu sama sekali tidak bisa memilih makanan dari menu, padahal kamu itu lelaki. Akhirnya kamu selalu memesan kari saja. Kalau aku jengkel, kamu langsung rapuh sampai pingsan dan lama tidak bangkit kembali"
-mc: "Maafkan aku....."
-narator: "Uhhh...benar inikah cinta yang harus kudengar pada akhir hayatku? Mana makna hidupku? Mana nilainya? Benar-benar tak kenal ampun."
-mantan: "Eh masih ada lagi. Kamu suka banyak bicara di telepon tapi kalo ketemu muka nya diam gini kayak tidak ada selera bicara sedikitpun."
-mc: "Tapi, meski aku sebrengsek itu, kok kamu bisa berpacaran denganku sampai tiga setengah tahun lamanya?"
-mantan: "Iya, tapi.... aku suka telepon darimu. Aku suka kamu waktu bercerita tentang musik atau novel, seolah sedang menyaksikan sesuatu menakjubkan sampai bisa mengubah dunia. Padahal kamu hampir tidak bisa bicara apa-apa kalau kita ketemu."
-mc: "Betul juga. Aku juga sambil mendengarkan ceritamu tentang film yang kamu tonton hari itu lewat telepon, merasakan diri sendiri seakan-akan dunia bisa berubah drastis"
-narator: "Kami tertawa di cafe. Untuk sejenak aku melupakan kematianku."
-mantan: "Bagaimana kabar ayahmu? Kalian belum baikan juga?"
-mc: "em... bagaimana ya? Aku belum menemuinya sejak ibuku meninggal."
-mantan: "Ibumu sering mengatakan semoga kalian jadi rukun... Ibumu benar-benar orang baik. Waktu ada restoran baru buka, ibu sering mengajakku makan di situ. Ibu mengajariku masak. Bahkan pernah ke salon bersama."
-mc: "Salon? Wah, aku baru tau."
-mantan: "Kalau kubis, bagaimana kabarnya? Kalau kamu mati, siapa yang merawat kubis?"
-mc: "Aku akan menitipkannya kepada seseorang yang kukira"
-mantan: "Begitu ya, kalau kesulitan katakan saja"
-mc: "Emm.....terimakasih. anu...menurutmu kenapa kita putus?"
-mantan: "Kok kenapa? Tiba-tiba saja"
-mc: "Kukira pasti ada alasannya, tapi walaupun aku berpikir keras, aku tidak bisa menemukan alasannya"
-mantan: "Eh? Kalau makanan kesukaanku apa kamu masih ingat?"
-mc: "Udang goreng tepung roti!"
-mantan: "Salah! Tempura jagung! Kalau begitu, apa kau masih ingat minuman favoritku?"
-mc: "hmm.....aku tidak ingat, aku menyerah"
-mantan: "Padahal minuman nya ada baru tadi kita minum. Cokelat panas. alasan kita putus juga semacam itu. Tidak pantas diingat. Mungkin liburan kita sebelum masuk kuliah juga ada kaitannya."
-mc: "Buenos Aires?"
-narator: "Selama 3 tahun pacaran kami tidak pernah meninggalkan kota kecil yang menjadi tempat tinggal kami... Sebelum masuk kuliah kami merencanakan liburan ke Argentina ke suatu tempat bernama Buenos Aires."
-narator: "Kita punya teman dekat disana yang sangat akrab dan berjanji akan ketemu keesokan harinya untuk liburan bersama namun maut berkata lain, dia ditemukan meninggal karena kecelakaan. Yang menjadikan trauma yang mendalam bagi kita, sejak kejadian itu kita tak lagi saling bicara."
-narator: "Kami kembali ke kota kecil tempat tinggal kami, hanya kata 'sampai jumpa' yang ia ucapkan, tak lama kami putus. aku berandai jika saja ada telepon di pesawat yang membuatku berani berbicara padanya hari itu..."
-[background fade="1.0"]
-jump hari1_malam_bioskop/
+mc: Aku baik-baik saja. Hanya ingin bertemu. Dan memberitahumu... bahwa waktuku tak lama lagi.
+mantan: Kenapa tiba-tiba?
+narator: Ternyata reaksinya bahkan di bawah tingkat prangko. Namun, aku sendiri juga bersikap tenang ketika dinyatakan kematian tak lama lagi. 
+narator: Tapi mengapa manusia mengharapkan orang lain melakukan hal yang bahkan tidak dapat dilakukan oleh diri sendiri? 
+narator: Apakah aku ingin dia kaget? Atau ingin dia bersedih?
+mc: Aku... terkena kanker.
+mantan: Oh, gawat ya. Tapi kau tidak kelihatan sedih sedikitpun?
+narator: Karena kematianku ditunda oleh iblis. Tidak mungkin aku mengaku demikian. Lagipula bukan ini yang aku mau bicarakan.
+mc: Emmm..... kalau biasanya orang akan mati, orang tersebut ingin mendengar atau mencari tau hal apapun tentang dirinya untuk memastikan makna hidupnya. Tentu aku pun ingin tahu. Karena itu aku ingin kamu ceritakan beberapa hal yang masih teringat dalam kenangan kita. Hal sepele apapun boleh.
+mantan: Sering ke toilet. Terlalu sering. Terus, terlalu banyak mendesah. Apakah sesulit itu hidupmu? Selalu kupikir begitu.
+mc: Emmm...begitukah?
+mantan: Kamu juga sama sekali gak bisa minum miras. Oh, ya kalau kita ke restoran, kamu sama sekali tidak bisa memilih makanan dari menu, padahal kamu itu lelaki. Akhirnya kamu selalu memesan kari saja. Kalau aku jengkel, kamu langsung rapuh sampai pingsan dan lama tidak bangkit kembali.
+mc: Maafkan aku.....
+narator: Uhhh...benar inikah cinta yang harus kudengar pada akhir hayatku? Mana makna hidupku? Mana nilainya? Benar-benar tak kenal ampun. 
+narator: Itukah kenangan lelaki yang ia pernah cintai? Dia sama seperti kamu perempuan di dunia ini, hanya bengis dan dingin tanpa kenal kompromi dengan mantannya.
+mantan: Eh masih ada lagi. Kamu suka banyak bicara di telepon tapi kalo ketemu muka nya diam gini kayak tidak ada selera bicara sedikitpun.
+mc: Tapi, meski aku sebrengsek itu, kok kamu bisa berpacaran denganku sampai tiga setengah tahun lamanya?
+mantan: Iya, tapi.... aku suka telepon darimu. Aku suka kamu waktu bercerita tentang musik atau novel, seolah sedang menyaksikan sesuatu menakjubkan sampai bisa mengubah dunia. Padahal kamu hampir tidak bisa bicara apa-apa kalau kita ketemu.
+mc: Betul juga. Aku juga sambil mendengarkan ceritamu tentang film yang kamu tonton hari itu lewat telepon, merasakan diri sendiri seakan-akan dunia bisa berubah drastis.

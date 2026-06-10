@@ -33,12 +33,14 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "belum_bisa_tidur": "res://dialogues/belum_bisa_tidur.dtl",
+"belum_waktunya_pulang": "res://dialogues/belum_waktunya_pulang.dtl",
 "hari0_bangun": "res://dialogues/hari0_bangun.dtl",
 "hari0_flashback": "res://dialogues/hari0_flashback.dtl",
 "hari0_malam_aloha": "res://dialogues/hari0_malam_aloha.dtl",
 "hari1_cermin": "res://dialogues/hari1_cermin.dtl",
 "hari1_dapur": "res://dialogues/hari1_dapur.dtl",
 "hari1_malam_bioskop": "res://dialogues/hari1_malam_bioskop.dtl",
+"hari1_malam_jalan": "res://dialogues/hari1_malam_jalan.dtl",
 "hari1_mantan_datang": "res://dialogues/hari1_mantan_datang.dtl",
 "hari1_pagi_kamar": "res://dialogues/hari1_pagi_kamar.dtl",
 "hari1_pintu": "res://dialogues/hari1_pintu.dtl",
@@ -51,6 +53,7 @@ directories/dtl_directory={
 "hari3_siang_taman": "res://dialogues/hari3_siang_taman.dtl",
 "hari4_kucing": "res://dialogues/hari4_kucing.dtl",
 "pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
+"pintu_toko_terkunci": "res://dialogues/pintu_toko_terkunci.dtl",
 "prolog_vonis": "res://dialogues/prolog_vonis.dtl",
 "test_aloha": "res://scenes/characters/test_aloha.dtl",
 "tidur_malam": "res://dialogues/tidur_malam.dtl",

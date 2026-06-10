@@ -5,6 +5,7 @@ extends Node
 var current_day: int = 1
 var can_sleep: bool = false
 var can_leave_room: bool = false
+var cafe_event_done: bool = false
 
 signal day_changed(new_day: int)
 

@@ -15,6 +15,9 @@ var last_facing_direction: String = "down"
 # Flag tambahan agar animasi bangun tidur tidak tertimpa
 var is_waking_up: bool = false
 
+# Flag untuk custom animation (seperti duduk)
+var is_custom_animation: bool = false
+
 func _ready() -> void:
 	# Masukkan player ke dalam grup "Player" agar mudah dicari oleh script lain
 	add_to_group("Player")
@@ -24,7 +27,8 @@ func _physics_process(_delta: float) -> void:
 	if is_movement_locked:
 		velocity = Vector2.ZERO
 		move_and_slide()
-		play_idle_animation()
+		if not is_custom_animation:
+			play_idle_animation()
 		return
 
 	# Mengambil input arah dari Project Settings -> Input Map (W-A-S-D atau Arah Panah)
@@ -66,10 +70,20 @@ func play_idle_animation() -> void:
 # Fungsi untuk dipanggil dari luar (misal oleh StoryManager saat dialog mulai)
 func lock_movement() -> void:
 	is_movement_locked = true
-	play_idle_animation()
+	if not is_custom_animation:
+		play_idle_animation()
 
 func unlock_movement() -> void:
 	is_movement_locked = false
+	is_custom_animation = false
+
+func play_custom_animation(anim_name: String) -> void:
+	is_custom_animation = true
+	animated_sprite.play(anim_name)
+
+func stop_custom_animation() -> void:
+	is_custom_animation = false
+	play_idle_animation()
 
 # Fungsi untuk memutar animasi bangun tidur saat berganti hari
 func play_waking_up_animation() -> void:
