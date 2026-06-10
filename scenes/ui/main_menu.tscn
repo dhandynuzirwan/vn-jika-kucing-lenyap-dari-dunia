@@ -10,23 +10,52 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 178.0
+offset_right = 5.0
+offset_bottom = 178.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fe2o3")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1437813541]
 layout_mode = 0
-offset_right = 2752.0
-offset_bottom = 1536.0
-scale = Vector2(0.69715476, 0.7082076)
+offset_left = -290.99997
+offset_top = -353.99997
+offset_right = 2461.0
+offset_bottom = 1182.0
+scale = Vector2(0.93715537, 0.9110135)
 texture = SubResource("CompressedTexture2D_sl1te")
 
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1410522377]
+position = Vector2(960, -50)
+amount = 40
+lifetime = 10.0
+preprocess = 5.0
+emission_shape = 3
+emission_rect_extents = Vector2(960, 1)
+direction = Vector2(0, 1)
+spread = 20.0
+gravity = Vector2(0, 50)
+initial_velocity_min = 30.0
+initial_velocity_max = 80.0
+angular_velocity_min = -60.0
+angular_velocity_max = 60.0
+scale_amount_min = 4.0
+scale_amount_max = 8.0
+color = Color(1, 0.7, 0.8, 0.8)
+
 [node name="Label" type="Label" parent="." unique_id=687334147]
-layout_mode = 0
-offset_left = 586.0
-offset_top = 362.0
-offset_right = 1442.0
-offset_bottom = 445.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.74700004
+anchor_top = 0.43400002
+anchor_right = 0.74700004
+anchor_bottom = 0.43400002
+offset_left = -428.2401
+offset_top = 117.27997
+offset_right = 427.7599
+offset_bottom = 223.27997
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -38,14 +67,18 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.294
 anchor_bottom = 0.277
-offset_left = 877.0
-offset_top = 463.0
-offset_right = 591.52
-offset_bottom = 264.84
+offset_left = 1297.0
+offset_top = 687.0
+offset_right = 1011.52
+offset_bottom = 488.84
 
 [node name="TombolMulai" type="Button" parent="VBoxContainer" unique_id=1967666556]
 layout_mode = 2
 text = "Mulai Game"
+
+[node name="TombolBGM" type="Button" parent="VBoxContainer" unique_id=1833409071]
+layout_mode = 2
+text = "BGM: ON"
 
 [node name="TombolKeluar" type="Button" parent="VBoxContainer" unique_id=446306357]
 layout_mode = 2
