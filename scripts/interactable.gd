@@ -9,6 +9,13 @@ class_name Interactable
 @export var requires_daily_event: bool = false
 @export var locked_timeline: String = ""
 
+# Variabel untuk AI Follower (Mengikuti)
+var is_following_player: bool = false
+var is_moving: bool = false
+var follow_speed: float = 75.0
+var follow_distance: float = 45.0
+var stop_distance: float = 30.0
+
 var is_player_in_range: bool = false
 
 func _ready() -> void:
@@ -131,3 +138,74 @@ func _unhandled_input(event: InputEvent) -> void:
 			
 			if tl_to_play != "":
 				Dialogic.start(tl_to_play)
+
+# ==============================================================================
+# LOGIKA CUTSCENE & AI FOLLOWER
+# ==============================================================================
+
+func walk_to_target(target_pos: Vector2, duration: float) -> void:
+	var sprite = get_node_or_null("AnimatedSprite2D")
+	if sprite:
+		var diff = target_pos - global_position
+		if abs(diff.x) > abs(diff.y):
+			sprite.play("walk_right" if diff.x > 0 else "walk_left")
+		else:
+			sprite.play("walk_down" if diff.y > 0 else "walk_up")
+			
+	var tween = create_tween()
+	tween.tween_property(self, "global_position", target_pos, duration)
+	await tween.finished
+	
+	if sprite:
+		var diff = get_tree().get_first_node_in_group("Player").global_position - global_position
+		if abs(diff.x) > abs(diff.y):
+			sprite.play("idle_right" if diff.x > 0 else "idle_left")
+		else:
+			sprite.play("idle_down" if diff.y > 0 else "idle_up")
+
+func _physics_process(delta: float) -> void:
+	if not is_following_player:
+		return
+		
+	var player = get_tree().get_first_node_in_group("Player")
+	if not player:
+		return
+		
+	var dist = global_position.distance_to(player.global_position)
+	var sprite = get_node_or_null("AnimatedSprite2D")
+	
+	# Hysteresis (Jeda agar tidak maju-berhenti setiap frame)
+	if is_moving:
+		if dist <= stop_distance:
+			is_moving = false
+	else:
+		if dist > follow_distance:
+			is_moving = true
+	
+	if is_moving:
+		# Bergerak mendekati pemain
+		var direction = (player.global_position - global_position).normalized()
+		global_position += direction * follow_speed * delta
+		
+		# Animasi jalan (jangan restart animasi berulang jika sudah jalan ke arah itu)
+		if sprite:
+			var anim_name = ""
+			if abs(direction.x) > abs(direction.y):
+				anim_name = "walk_right" if direction.x > 0 else "walk_left"
+			else:
+				anim_name = "walk_down" if direction.y > 0 else "walk_up"
+				
+			if sprite.animation != anim_name:
+				sprite.play(anim_name)
+	else:
+		# Berhenti dan menghadap pemain
+		if sprite:
+			var diff = player.global_position - global_position
+			var idle_anim = ""
+			if abs(diff.x) > abs(diff.y):
+				idle_anim = "idle_right" if diff.x > 0 else "idle_left"
+			else:
+				idle_anim = "idle_down" if diff.y > 0 else "idle_up"
+				
+			if sprite.animation != idle_anim:
+				sprite.play(idle_anim)

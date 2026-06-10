@@ -12,6 +12,9 @@ var is_movement_locked: bool = false
 # Menyimpan arah hadap terakhir untuk menentukan animasi diam (default menghadap bawah/depan)
 var last_facing_direction: String = "down"
 
+# Flag tambahan agar animasi bangun tidur tidak tertimpa
+var is_waking_up: bool = false
+
 func _ready() -> void:
 	# Masukkan player ke dalam grup "Player" agar mudah dicari oleh script lain
 	add_to_group("Player")
@@ -57,7 +60,8 @@ func update_walk_animation(direction: Vector2) -> void:
 
 # Fungsi untuk memainkan animasi diam berdasarkan arah hadap terakhir
 func play_idle_animation() -> void:
-	animated_sprite.play("idle_" + last_facing_direction)
+	if not is_waking_up:
+		animated_sprite.play("idle_" + last_facing_direction)
 
 # Fungsi untuk dipanggil dari luar (misal oleh StoryManager saat dialog mulai)
 func lock_movement() -> void:
@@ -66,3 +70,41 @@ func lock_movement() -> void:
 
 func unlock_movement() -> void:
 	is_movement_locked = false
+
+# Fungsi untuk memutar animasi bangun tidur saat berganti hari
+func play_waking_up_animation() -> void:
+	is_waking_up = true
+	is_movement_locked = true
+	
+	# 1. Fase Tidur (Jika ada animasi "idle_tidur", mainkan sebentar)
+	if animated_sprite.sprite_frames.has_animation("idle_tidur"):
+		animated_sprite.play("idle_tidur")
+		# Biarkan MC terlihat tertidur selama 0.5 detik untuk memberi waktu TriggerBangun memicu dialog
+		await get_tree().create_timer(0.5).timeout
+		
+		# Jika dialog sudah terpicu (sedang berjalan), tunggu sampai dialog tersebut ditutup/selesai!
+		while Dialogic.current_timeline != null:
+			# Tunggu sejenak berulang kali sampai timeline habis
+			await get_tree().create_timer(0.1).timeout
+			
+		# Tambahan jeda 0.5 detik setelah dialog selesai agar MC tidak langsung melompat instan
+		await get_tree().create_timer(0.5).timeout
+		
+	# 2. Fase Loncat Bangun (Jika ada animasi "bangun_tidur")
+	if animated_sprite.sprite_frames.has_animation("bangun_tidur"):
+		animated_sprite.play("bangun_tidur")
+		
+		# Animasi pindah posisi (melompat) dari kasur ke lantai samping kasur
+		# Posisi target: Vector2(24, 35)
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, "global_position", Vector2(24, 35), 0.5).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+		
+		# Tunggu sampai animasi melompat selesai
+		await animated_sprite.animation_finished
+		
+	# Setelah selesai, kembalikan ke state normal
+	is_waking_up = false
+	last_facing_direction = "down"
+	
+	# Buka kunci pergerakan
+	unlock_movement()
