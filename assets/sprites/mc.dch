@@ -10,12 +10,112 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "netral",
 &"description": "",
 &"display_name": "MC",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
-&"scale": 1.0
+&"portraits": {
+"dada_sesak": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_DADA_SESAK.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"malu_malu": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_MALUMALU.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"marah": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_MARAH.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"netral": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_NETRAL.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"ngakak": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_NGAKAK.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"nyimak_aloha": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_NYIMAK_ALOHA.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sakit_kepala": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_SAKIT_KEPALA.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"senyum_ikhlas": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_SENYUM_IKHLAS.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"senyum_tipis": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_SENYUM_TIPIS.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"syok_kesal": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_SYOK_KESAL.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"terkejut": {
+"export_overrides": {
+"image": "\"res://assets/portraits/MC/MC_TERKEJUT.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 0.55
 }

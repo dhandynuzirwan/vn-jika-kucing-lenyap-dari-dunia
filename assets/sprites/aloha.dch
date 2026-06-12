@@ -10,12 +10,103 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "default",
 &"description": "",
 &"display_name": "Aloha",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
-&"scale": 1.0
+&"portraits": {
+"ada_maunya": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_ADA_MAUNYA.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"datar": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_DATAR.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"default": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_DEFAULT.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"kedipanmata": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_KEDIPANMATA.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"kesal": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_KESAL.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"ketawa_tengil": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_KETAWA_TENGIL.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"ngakak_jail": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_NGAKAK_JAIL.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"ngejek": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_NGEJEK.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"serius": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_SERIUS.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"terkejeut": {
+"export_overrides": {
+"image": "\"res://assets/portraits/ALOHA/ALOHA_TERKEJUT.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 0.55
 }

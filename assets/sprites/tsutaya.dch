@@ -10,12 +10,31 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "netral",
 &"description": "",
 &"display_name": "Tsutaya",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"netral": {
+"export_overrides": {
+"image": "\"res://assets/portraits/TSUTAYA/TS_NETRAL.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sedih": {
+"export_overrides": {
+"image": "\"res://assets/portraits/TSUTAYA/TS_SEDIH.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }
