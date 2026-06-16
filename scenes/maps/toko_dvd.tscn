@@ -22,7 +22,7 @@ timeline_name = "hari2_siang_tsutaya"
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=2081342279]
 position = Vector2(100, 180)
 script = ExtResource("2_toko")
-target_scene = "res://scenes/maps/jalanan_kota.tscn"
+target_scene = "res://scenes/maps/dalam_bioskop.tscn"
 requires_leave_permission = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1356433191]
