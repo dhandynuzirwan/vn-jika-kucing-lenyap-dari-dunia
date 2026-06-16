@@ -1,5 +1,4 @@
 [gd_scene format=3 uid="uid://4ndrgc6sjtji"]
-
 [ext_resource type="Texture2D" uid="uid://clliw67idaysf" path="res://assets/Tiles/2_LivingRoom_Black_Shadow_16x16.png" id="1_mnld5"]
 [ext_resource type="Texture2D" uid="uid://byrur7txellag" path="res://assets/Tiles/3_Bathroom_Black_Shadow_16x16.png" id="2_yrcvg"]
 [ext_resource type="Texture2D" uid="uid://dbv31ie1r0vn4" path="res://assets/Tiles/4_Bedroom_Black_Shadow_16x16.png" id="3_6g8tv"]
@@ -16,7 +15,6 @@
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="15_d8i2l"]
 [ext_resource type="Texture2D" uid="uid://dw3e3ra81p7pp" path="res://assets/objects/hp.png" id="16_cvcuk"]
 [ext_resource type="Script" uid="uid://ceoo2ooa51w6u" path="res://scripts/disappearing_item.gd" id="17_ykrbj"]
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcxud"]
 texture = ExtResource("1_mnld5")
 2:0/0 = 0
@@ -630,7 +628,6 @@ texture = ExtResource("1_mnld5")
 10:44/0 = 0
 14:44/0 = 0
 15:44/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1340v"]
 texture = ExtResource("2_yrcvg")
 3:0/0 = 0
@@ -1372,7 +1369,6 @@ texture = ExtResource("2_yrcvg")
 4:54/0 = 0
 5:54/0 = 0
 6:54/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w1qtg"]
 texture = ExtResource("3_6g8tv")
 9:0/0 = 0
@@ -2751,7 +2747,6 @@ texture = ExtResource("3_6g8tv")
 5:106/0 = 0
 6:106/0 = 0
 7:106/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b7vnp"]
 texture = ExtResource("4_df4qw")
 3:0/0 = 0
@@ -3069,7 +3064,6 @@ texture = ExtResource("4_df4qw")
 13:28/0 = 0
 12:29/0 = 0
 13:29/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lf0q3"]
 texture = ExtResource("5_uaq6v")
 0:2/0 = 0
@@ -3504,7 +3498,6 @@ texture = ExtResource("5_uaq6v")
 12:37/0 = 0
 13:37/0 = 0
 14:37/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xgyj3"]
 texture = ExtResource("6_d8i2l")
 1:0/0 = 0
@@ -4237,7 +4230,6 @@ texture = ExtResource("6_d8i2l")
 13:48/0 = 0
 14:48/0 = 0
 15:48/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ch3y"]
 texture = ExtResource("7_bhwu1")
 0:0/0 = 0
@@ -5262,7 +5254,6 @@ texture = ExtResource("7_bhwu1")
 15:58/0 = 0
 22:58/0 = 0
 23:58/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h8s4e"]
 texture = ExtResource("8_cvcuk")
 0:0/0 = 0
@@ -6257,7 +6248,6 @@ texture = ExtResource("8_cvcuk")
 18:37/0 = 0
 19:37/0 = 0
 20:37/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_78qlb"]
 texture = ExtResource("9_ykrbj")
 0:0/0 = 0
@@ -6551,7 +6541,6 @@ texture = ExtResource("9_ykrbj")
 18:8/0 = 0
 20:8/0 = 0
 12:9/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xddoc"]
 texture = ExtResource("10_uiijr")
 0:0/0 = 0
@@ -7644,7 +7633,6 @@ texture = ExtResource("10_uiijr")
 8:75/0 = 0
 9:75/0 = 0
 10:75/0 = 0
-
 [sub_resource type="TileSet" id="TileSet_mfc7a"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tcxud")
@@ -7657,74 +7645,58 @@ sources/6 = SubResource("TileSetAtlasSource_5ch3y")
 sources/7 = SubResource("TileSetAtlasSource_h8s4e")
 sources/8 = SubResource("TileSetAtlasSource_78qlb")
 sources/9 = SubResource("TileSetAtlasSource_xddoc")
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uaq6v"]
 size = Vector2(16, 8)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8i2l"]
 size = Vector2(19.5, 25)
+[ext_resource type="Script" uid="uid://cx4x2m1xxx" path="res://scripts/toko_dvd_cutscene.gd" id="99_toko"]
 
-[node name="KamarMC" type="Node2D" unique_id=1886236822]
+[node name="TokoDVD" type="Node2D"]
+script = ExtResource("99_toko") unique_id=1886236822]
 y_sort_enabled = true
-
 [node name="TileMap" type="TileMap" parent="." unique_id=2028054268]
 y_sort_enabled = true
 tile_set = SubResource("TileSet_mfc7a")
 format = 2
 layer_0/name = "Lantai"
-layer_0/tile_data = PackedInt32Array(65536, 327684, 13, 65537, 327684, 13, 65538, 327684, 13, 131074, 327684, 13, 131075, 327684, 13, 65539, 327684, 13, 131073, 327684, 13, 131072, 327684, 13, 196608, 327684, 13, 196609, 327684, 13, 196610, 327684, 13, 196611, 327684, 13, 196612, 327684, 13, 196613, 327684, 13, 131077, 327684, 13, 65541, 327684, 13, 65542, 327684, 13, 65544, 327684, 13, 131080, 327684, 13, 131079, 327684, 13, 131078, 327684, 13, 196614, 327684, 13, 196615, 327684, 13, 196616, 327684, 13, 262152, 327684, 13, 262153, 327684, 13, 262154, 327684, 13, 327690, 1507335, 14, 327688, 1507335, 14, 262149, 327684, 13, 262150, 327684, 13, 262151, 327684, 13, 327685, 327684, 13, 327686, 720904, 5, 327687, 1507335, 14, 393221, 327684, 13, 393222, 786440, 7, 393223, 1507335, 15, 393224, 1507335, 15, 458761, 851972, 29, 458760, 851972, 29, 458759, 851972, 29, 458758, 786440, 7, 458757, 327684, 13, 393216, 327684, 13, 393217, 327684, 13, 393218, 327684, 13, 393219, 327684, 13, 393220, 327684, 13, 458756, 327684, 13, 458755, 327684, 13, 458754, 327684, 13, 458753, 327684, 13, 458752, 327684, 13, 524288, 327684, 13, 524289, 327684, 13, 589825, 327684, 13, 589826, 327684, 13, 589824, 327684, 13, 524290, 327684, 13, 524291, 327684, 13, 589827, 327684, 13, 589828, 327684, 13, 524292, 327684, 13, 524293, 327684, 13, 589829, 327684, 13, 589830, 786440, 7, 524294, 786440, 7, 589831, 851972, 29, 524295, 851972, 29, 524296, 851972, 29, 524297, 851972, 29, 589833, 851972, 29, 589832, 851972, 29, 458762, 851972, 29, 458763, 851972, 29, 458764, 851972, 29, 524300, 851972, 29, 524299, 851972, 29, 524298, 851972, 29, 589834, 851972, 29, 589835, 851972, 29, 589836, 851972, 29, 65545, 327684, 13, 131081, 327684, 13, 196617, 327684, 13, 262155, 327684, 13, 327691, 1507335, 14, 131076, 196615, 23, 65540, 196615, 22, 4, 786440, 7, -65532, 655368, 5, -65531, 65543, 22, 5, 65543, 23, -65530, 65543, 22, 6, 65543, 23, -65529, 65543, 22, 7, 65543, 23, -65528, 65543, 22, 8, 65543, 23, -65527, 65543, 22, 9, 65543, 23, -65533, 65543, 22, 3, 65543, 23, -65534, 65543, 22, 2, 65543, 23, -65535, 65543, 22, 1, 65543, 23, -65536, 65543, 22, 0, 65543, 23, 262148, 131079, 22, 327684, 131079, 23, 262147, 65543, 22, 327683, 65543, 23, 262145, 65543, 22, 327681, 65543, 23, 262146, 65543, 22, 327682, 65543, 23, 262144, 65543, 22, 327680, 65543, 23, 393226, 1507335, 15, 393227, 1507335, 15, 327692, 1507335, 14, 393228, 1507335, 15, -65526, 589832, 5, 10, 786440, 7, 65546, 786440, 7, 131082, 458759, 22, 196618, 458759, 23, 131083, 65543, 22, 196619, 65543, 23, 131084, 65543, 22, 196620, 65543, 23, 262156, 327684, 13, 327689, 1507335, 14, 393225, 1507335, 15, -1, 393224, 6, 65535, 131080, 5, 131071, 131080, 5, 196607, 131080, 5, 262143, 131080, 5, 327679, 131080, 5, 393215, 131080, 5, 458751, 131080, 5, 524287, 131080, 5, 589823, 131080, 5, 655359, 131080, 5, 720895, 393224, 8, 655360, 458760, 8, 655361, 458760, 8, 655363, 458760, 8, 655362, 458760, 8, 655364, 458760, 8, 655365, 458760, 8, 655366, 262152, 8, 655367, 458760, 8, 655368, 458760, 8, 655369, 458760, 8, 655370, 458760, 8, 655371, 458760, 8, 655372, 458760, 8, 655373, 524296, 8, 589837, 524296, 7, 524301, 524296, 7, 458765, 524296, 7, 393229, 524296, 7, 327693, 524296, 7, 262157, 524296, 7, 196621, 524296, 7, 131085, 524296, 6, 65543, 327684, 13)
 layer_1/name = "Objek"
-layer_1/tile_data = PackedInt32Array(0, 196610, 57, 65536, 65538, 51, 131072, 131074, 52, 1, 524290, 10, 65537, 524290, 11, -65534, 524290, 101, 2, 524290, 104, 65538, 524290, 105, -65533, 589826, 101, 3, 589826, 104, 65539, 589826, 105, 262147, 589829, 23, 327683, 589829, 24, 393219, 589829, 25, 327682, 524293, 11, 393218, 524293, 12, 393217, 327685, 268435465, 327681, 720901, 2, 327680, 917509, 1, 393216, 917509, 2, 458752, 917509, 3, 524288, 393221, 9, 524290, 327685, 40, 524289, 458757, 11, 589825, 458757, 12, 524291, 262149, 13, 589827, 262149, 14, 589826, 327685, 41, 327684, 786432, 20, 393220, 786432, 21, 65541, 262144, 6, 65542, 327680, 6, 7, 327680, 11, 8, 393216, 11, 9, 786432, 20, 327687, 327681, 25, 393223, 327681, 26, 458759, 589825, 7, 524295, 917505, 3, 589831, 917505, 4, 393226, 851969, 23, 458762, 851969, 24, 524298, 851969, 25, 327691, 851969, 18, 393227, 851969, 19, 458763, 851969, 20, 524299, 851969, 21, 327688, 393217, 25, 393224, 393217, 26, 458760, 655361, 7, 524296, 983041, 3, 589832, 983041, 4, 327692, 917505, 18, 393228, 917505, 19, 458764, 917505, 20, 524300, 917505, 21, 131083, 65545, 42, 196619, 65545, 43, -65531, 524297, 43, 5, 524297, 44, -65530, 589833, 43, 6, 589833, 44, 65543, 9, 46, 131079, 9, 47, 65544, 131081, 46, 131080, 131081, 47, 65540, 393218, 73, 131076, 393218, 74)
 layer_2/name = "Cover"
-layer_2/tile_data = PackedInt32Array(65536, 327682, 54, 131072, 393218, 268435511, 393216, 524293, 1073741831, 458752, 589829, 1073741831, -65529, 589826, 12, 7, 589826, 13, -65528, 655362, 12, 8, 655362, 13, -65531, 327680, 9, 5, 327680, 10, 6, 393216, 11, 327689, 65545, 40, 393225, 65545, 41, 65543, 327680, 12, 65544, 393216, 12, 65545, 786432, 21, 262145, 5, 17, 327681, 5, 18, 262144, 720901, 5, 327680, 720901, 6, 131080, 393216, 28, 196616, 393216, 29, 131079, 262144, 28, 196615, 262144, 29)
 layer_3/name = "gadget"
-layer_3/tile_data = PackedInt32Array(6, 458761, 32, -65535, 131074, 4, 1, 131074, 5, 131084, 983040, 21, 196620, 983040, 22, 262156, 983040, 23)
-
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("11_6g8tv")]
 position = Vector2(29, 37)
 speed = 80.0
-
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=1058604081]
 script = ExtResource("14_uaq6v")
 target_scene = "res://scenes/maps/jalanan_kota.tscn"
 requires_leave_permission = true
 locked_timeline_per_hari = Array[String](["", "hari1_pintu", "", "", ""])
 target_scene_per_hari = Array[String](["", "res://scenes/maps/jalanan_kota.tscn", "res://scenes/maps/toko_dvd.tscn", "", ""])
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1416787775]
 position = Vector2(184, 65)
 shape = SubResource("RectangleShape2D_uaq6v")
-
 [node name="TriggerBangun" type="Area2D" parent="." unique_id=1518604112]
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["hari0_bangun", "hari1_pagi_kamar", "", "", ""])
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerBangun" unique_id=1876794574]
 position = Vector2(9.25, 31.5)
 shape = SubResource("RectangleShape2D_d8i2l")
-
 [node name="ponsel" type="Sprite2D" parent="." unique_id=1506968749]
 position = Vector2(24, 9)
 scale = Vector2(0.015078092, 0.011742819)
 texture = ExtResource("16_cvcuk")
 script = ExtResource("17_ykrbj")
-
 [node name="PintuKeluar_placeholder" type="Area2D" parent="." unique_id=778073307]
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "hari1_cermin", "", "", ""])
-
 [node name="TriggerCermin#CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411985585]
 position = Vector2(72, 42)
 shape = SubResource("RectangleShape2D_d8i2l")
-
 [node name="NPC_Tsutaya" type="Area2D" parent="." unique_id=1854531800 groups=["Interactable"]]
 position = Vector2(100, 100)
 script = ExtResource("13_df4qw")
 timeline_name = "hari2_toko_dvd"
-
 [node name="Sprite2D" type="Sprite2D" parent="NPC_Tsutaya" unique_id=1857309118]
 texture = ExtResource("1_mnld5")
 region_enabled = true
 region_rect = Rect2(16, 16, 16, 32)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Tsutaya" unique_id=1199548439]
