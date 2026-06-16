@@ -21,30 +21,46 @@ func _on_dialogic_signal(argument: String) -> void:
 func _tsutaya_cari_dvd() -> void:
 	if not tsutaya: return
 	
-	# Pause dialogic text briefly if needed, but Dialogic will wait if we don't advance it manually, 
-	# actually Dialogic advances automatically if there's no [wait]. The user script has narration next, so it will play alongside the movement.
-	
+	var anim = tsutaya.get_node_or_null("AnimatedSprite2D")
 	var tween = create_tween()
 	var start_pos = tsutaya.global_position
 	
 	# Jalan ke kiri
+	if anim: tween.tween_callback(anim.play.bind("walk_left"))
 	tween.tween_property(tsutaya, "global_position:x", start_pos.x - 40, 1.0)
-	# Jalan ke kanan
-	tween.tween_property(tsutaya, "global_position:x", start_pos.x + 40, 2.0)
 	
-	# We let it play while narrator speaks.
+	# Berhenti dan cek rak (idle_up)
+	if anim: tween.tween_callback(anim.play.bind("idle_up"))
+	tween.tween_interval(1.5) # diam cek rak selama 1.5 detik
+	
+	# Jalan ke kanan
+	if anim: tween.tween_callback(anim.play.bind("walk_right"))
+	tween.tween_property(tsutaya, "global_position:x", start_pos.x + 80, 2.0) # Bergerak lewati start_pos
+	
+	# Berhenti dan cek rak lagi
+	if anim: tween.tween_callback(anim.play.bind("idle_up"))
+	tween.tween_interval(1.5)
+	
+	# Standby menghadap player (idle_left)
+	if anim: tween.tween_callback(anim.play.bind("idle_left"))
 
 func _tsutaya_kembali() -> void:
 	if not tsutaya: return
 	
 	# Jeda dialogic: The user put [signal arg="tsutaya_kembali"] BEFORE tsutaya speaks. 
-	# We want to pause the timeline until Tsutaya comes back.
-	# Dialogic 2 can be paused:
 	Dialogic.paused = true
 	
+	var anim = tsutaya.get_node_or_null("AnimatedSprite2D")
 	var tween = create_tween()
+	
+	# Asumsi MC ada di kiri bawah, Tsutaya jalan kembali
+	if anim: tween.tween_callback(anim.play.bind("walk_left"))
 	# Kembali ke dekat player (kiri/kanan)
 	tween.tween_property(tsutaya, "global_position", player.global_position + Vector2(20, -10), 1.5)
+	
+	# Sesudah sampai, menghadap MC (kiri)
+	if anim: tween.tween_callback(anim.play.bind("idle_left"))
+	
 	await tween.finished
 	
 	Dialogic.paused = false
