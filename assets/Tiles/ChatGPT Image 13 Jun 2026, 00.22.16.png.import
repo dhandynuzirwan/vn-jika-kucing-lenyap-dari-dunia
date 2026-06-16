@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk7mwk85mjh2s"
-path="res://.godot/imported/MC_SENYUM_TIPIS.png-33d578a7da34435227873140cf4aa2e3.ctex"
+uid="uid://0148gmt3c4sj"
+path="res://.godot/imported/ChatGPT Image 13 Jun 2026, 00.22.16.png-666a6b5a037facf799ef2b7be5941fee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/MC/MC_SENYUM_TIPIS.png"
-dest_files=["res://.godot/imported/MC_SENYUM_TIPIS.png-33d578a7da34435227873140cf4aa2e3.ctex"]
+source_file="res://assets/Tiles/ChatGPT Image 13 Jun 2026, 00.22.16.png"
+dest_files=["res://.godot/imported/ChatGPT Image 13 Jun 2026, 00.22.16.png-666a6b5a037facf799ef2b7be5941fee.ctex"]
 
 [params]
 

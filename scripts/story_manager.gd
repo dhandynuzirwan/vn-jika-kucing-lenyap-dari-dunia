@@ -2,16 +2,22 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 0
+var current_day: int = 2
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
 
 signal day_changed(new_day: int)
 
+var transition_layer: CanvasLayer
+var transition_rect: ColorRect
+var transition_label: Label
+
 func _ready() -> void:
 	# Tunggu satu frame agar seluruh sistem terinisialisasi
 	await get_tree().process_frame
+	
+	setup_transition_ui()
 	
 	if Dialogic.has_signal("timeline_started"):
 		Dialogic.timeline_started.connect(_on_dialogue_started)
@@ -19,6 +25,28 @@ func _ready() -> void:
 		Dialogic.timeline_ended.connect(_on_dialogue_ended)
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
+
+func setup_transition_ui() -> void:
+	transition_layer = CanvasLayer.new()
+	transition_layer.layer = 100 # Pastikan selalu di atas
+	add_child(transition_layer)
+	
+	transition_rect = ColorRect.new()
+	transition_rect.color = Color(0, 0, 0, 1) # Hitam
+	transition_rect.set_anchors_preset(Control.PRESET_FULL_RECT)
+	transition_rect.modulate = Color(1, 1, 1, 0) # Transparan di awal
+	transition_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	transition_layer.add_child(transition_rect)
+	
+	transition_label = Label.new()
+	transition_label.text = "Hari ke-X"
+	transition_label.set_anchors_preset(Control.PRESET_FULL_RECT)
+	transition_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	transition_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	transition_label.add_theme_font_size_override("font_size", 32)
+	transition_rect.add_child(transition_label)
+	
+	transition_layer.visible = false
 
 func _on_dialogic_signal(argument: String) -> void:
 	print(">> STORY MANAGER MENERIMA SINYAL: ", argument)
@@ -68,7 +96,7 @@ func _on_dialogue_ended() -> void:
 		player.unlock_movement()
 
 # Fungsi untuk memanggil pergantian hari dari kasur/interaksi tidur
-func ganti_hari() -> void:
+func ganti_hari(target_scene: String = "") -> void:
 	current_day += 1
 	can_sleep = false
 	can_leave_room = false
@@ -77,15 +105,44 @@ func ganti_hari() -> void:
 	Dialogic.VAR.set("hari_ke", current_day)
 	Dialogic.VAR.set("event_harian_selesai", false)
 	
-	# Beritahu seluruh game bahwa hari telah berganti
+	print("Sekarang adalah Hari ke-", current_day)
+	
+	# Transisi Layar Hitam (Fade In)
+	transition_label.text = "Hari ke-" + str(current_day)
+	transition_rect.modulate = Color(1, 1, 1, 0)
+	transition_rect.mouse_filter = Control.MOUSE_FILTER_STOP
+	transition_layer.visible = true
+	
+	var player = get_tree().get_first_node_in_group("Player")
+	if player and player.has_method("lock_movement"):
+		player.lock_movement()
+		
+	var tween_in = get_tree().create_tween()
+	tween_in.tween_property(transition_rect, "modulate", Color(1, 1, 1, 1), 1.5)
+	await tween_in.finished
+	
+	# Tahan Layar Hitam Selama 2 Detik agar tulisan mudah dibaca
+	await get_tree().create_timer(2.0).timeout
+	
+	# Setup posisi MC saat layar sepenuhnya gelap
+	if target_scene != "":
+		get_tree().change_scene_to_file(target_scene)
+		await get_tree().process_frame
+		await get_tree().process_frame
+
 	day_changed.emit(current_day)
 	
-	# Pindahkan Player kembali ke kasur (titik awal) agar saat layar terang dia sudah di posisi semula
-	var player = get_tree().get_first_node_in_group("Player")
+	player = get_tree().get_first_node_in_group("Player")
 	if player:
-		# Posisi tepat di atas bantal/kasur (digeser sedikit ke kiri sesuai request)
 		player.global_position = Vector2(7, 29)
 		if player.has_method("play_waking_up_animation"):
+			# Fungsi ini akan secara asinkron memainkan animasi loncat ke samping kasur
 			player.play_waking_up_animation()
+			
+	# Fade Out: Kembali perlahan dari gelap, berbarengan dengan MC yang sedang melompat dari kasur
+	var tween_out = get_tree().create_tween()
+	tween_out.tween_property(transition_rect, "modulate", Color(1, 1, 1, 0), 1.5)
+	await tween_out.finished
 	
-	print("Sekarang adalah Hari ke-", current_day)
+	transition_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	transition_layer.visible = false

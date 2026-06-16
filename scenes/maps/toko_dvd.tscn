@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://2wjr36u0raka"]
+[gd_scene format=3 uid="uid://4ndrgc6sjtji"]
 
 [ext_resource type="Texture2D" uid="uid://clliw67idaysf" path="res://assets/Tiles/2_LivingRoom_Black_Shadow_16x16.png" id="1_mnld5"]
 [ext_resource type="Texture2D" uid="uid://byrur7txellag" path="res://assets/Tiles/3_Bathroom_Black_Shadow_16x16.png" id="2_yrcvg"]
@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://ckxta0w1tjmfs" path="res://assets/Tiles/Room_Builder_borders_16x16.png" id="9_ykrbj"]
 [ext_resource type="Texture2D" uid="uid://blqutcbise0fp" path="res://assets/Tiles/1_Generic_Black_Shadow_16x16.png" id="10_uiijr"]
 [ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="11_6g8tv"]
-[ext_resource type="PackedScene" uid="uid://cayvveux3h6ow" path="res://scenes/characters/npc_aloha.tscn" id="12_df4qw"]
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="13_df4qw"]
 [ext_resource type="Script" uid="uid://bl000vgfu16q8" path="res://scripts/scene_transition.gd" id="14_uaq6v"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="15_d8i2l"]
@@ -7659,9 +7658,6 @@ sources/7 = SubResource("TileSetAtlasSource_h8s4e")
 sources/8 = SubResource("TileSetAtlasSource_78qlb")
 sources/9 = SubResource("TileSetAtlasSource_xddoc")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_df4qw"]
-size = Vector2(20, 25)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uaq6v"]
 size = Vector2(16, 8)
 
@@ -7684,30 +7680,9 @@ layer_2/tile_data = PackedInt32Array(65536, 327682, 54, 131072, 393218, 26843551
 layer_3/name = "gadget"
 layer_3/tile_data = PackedInt32Array(6, 458761, 32, -65535, 131074, 4, 1, 131074, 5, 131084, 983040, 21, 196620, 983040, 22, 262156, 983040, 23)
 
-[node name="PosisiAloha_Hari2_DekatKasur" type="Marker2D" parent="." unique_id=202406121]
-position = Vector2(40, 28)
-
-[node name="NPC_Aloha" parent="." unique_id=486957782 instance=ExtResource("12_df4qw")]
-y_sort_enabled = true
-position = Vector2(30, 114)
-timeline_name = "hari0_malam_aloha"
-timeline_per_hari = Array[String](["hari0_malam_aloha", "", "hari2_bangun", "hari3_pagi_kamar", "hari4_kucing"])
-titik_kumpul_per_hari = Array[NodePath]([NodePath(""), NodePath("../PosisiAloha_Hari2"), NodePath("../PosisiAloha_Hari2_DekatKasur"), NodePath(""), NodePath("")])
-hapus_setelah_dialog = true
-
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("11_6g8tv")]
 position = Vector2(29, 37)
 speed = 80.0
-
-[node name="Kasur" type="Area2D" parent="." unique_id=1137098960]
-script = ExtResource("13_df4qw")
-timeline_name = "tidur_malam"
-requires_daily_event = true
-locked_timeline = "belum_bisa_tidur"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Kasur" unique_id=140283819]
-position = Vector2(11, 29.5)
-shape = SubResource("RectangleShape2D_df4qw")
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=1058604081]
 script = ExtResource("14_uaq6v")
@@ -7734,21 +7709,22 @@ scale = Vector2(0.015078092, 0.011742819)
 texture = ExtResource("16_cvcuk")
 script = ExtResource("17_ykrbj")
 
-[node name="PosisiAloha_Hari2" type="Marker2D" parent="." unique_id=1559444332]
-position = Vector2(53, 48)
-
-[node name="TriggerDapur" type="Area2D" parent="." unique_id=880483496]
-script = ExtResource("15_d8i2l")
-timeline_per_hari = Array[String](["", "hari1_dapur", "", "", ""])
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDapur" unique_id=1795914732]
-position = Vector2(85, 120)
-shape = SubResource("RectangleShape2D_d8i2l")
-
-[node name="TriggerCermin" type="Area2D" parent="." unique_id=778073307]
+[node name="PintuKeluar_placeholder" type="Area2D" parent="." unique_id=778073307]
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "hari1_cermin", "", "", ""])
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerCermin" unique_id=1411985585]
+[node name="TriggerCermin#CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411985585]
 position = Vector2(72, 42)
 shape = SubResource("RectangleShape2D_d8i2l")
+
+[node name="NPC_Tsutaya" type="Area2D" parent="." unique_id=1854531800 groups=["Interactable"]]
+position = Vector2(100, 100)
+script = ExtResource("13_df4qw")
+timeline_name = "hari2_toko_dvd"
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC_Tsutaya" unique_id=1857309118]
+texture = ExtResource("1_mnld5")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Tsutaya" unique_id=1199548439]

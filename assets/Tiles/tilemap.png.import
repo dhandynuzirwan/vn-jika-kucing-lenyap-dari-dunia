@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt32cyaq6e47w"
-path="res://.godot/imported/MC_NYIMAK_ALOHA.png-4bdb33c9570e9bc771604751fa5e1aa4.ctex"
+uid="uid://bbwpr0ot8v8pi"
+path="res://.godot/imported/tilemap.png-4964825f7fb0824f94d5614ba959783d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/MC/MC_NYIMAK_ALOHA.png"
-dest_files=["res://.godot/imported/MC_NYIMAK_ALOHA.png-4bdb33c9570e9bc771604751fa5e1aa4.ctex"]
+source_file="res://assets/Tiles/tilemap.png"
+dest_files=["res://.godot/imported/tilemap.png-4964825f7fb0824f94d5614ba959783d.ctex"]
 
 [params]
 

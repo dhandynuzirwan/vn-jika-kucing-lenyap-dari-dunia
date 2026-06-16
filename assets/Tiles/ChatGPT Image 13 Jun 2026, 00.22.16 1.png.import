@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyckgctdhjq88"
-path="res://.godot/imported/MC_MALUMALU.png-5fe4e2939e56d6909746818fb946402b.ctex"
+uid="uid://hl27ph57s6ph"
+path="res://.godot/imported/ChatGPT Image 13 Jun 2026, 00.22.16 1.png-6cbe1f13e03b3370934d7a33f537cbbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/MC/MC_MALUMALU.png"
-dest_files=["res://.godot/imported/MC_MALUMALU.png-5fe4e2939e56d6909746818fb946402b.ctex"]
+source_file="res://assets/Tiles/ChatGPT Image 13 Jun 2026, 00.22.16 1.png"
+dest_files=["res://.godot/imported/ChatGPT Image 13 Jun 2026, 00.22.16 1.png-6cbe1f13e03b3370934d7a33f537cbbb.ctex"]
 
 [params]
 

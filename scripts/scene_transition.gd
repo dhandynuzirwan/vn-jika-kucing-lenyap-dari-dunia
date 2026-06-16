@@ -8,6 +8,7 @@ extends Area2D
 @export var requires_cafe_event_done: bool = false
 @export var locked_timeline: String = "pintu_terkunci"
 @export var locked_timeline_per_hari: Array[String] = []
+@export var target_scene_per_hari: Array[String] = []
 
 func _ready() -> void:
 	# Dengarkan ketika ada objek fisik yang menyentuh area pintu ini
@@ -34,5 +35,9 @@ func _on_body_entered(body: Node2D) -> void:
 			return
 		
 		# Jika lolos syarat, pindah scene
-		if target_scene != "":
-			get_tree().change_scene_to_file(target_scene)
+		var final_target = target_scene
+		if target_scene_per_hari.size() > 0 and day < target_scene_per_hari.size():
+			if target_scene_per_hari[day] != "":
+				final_target = target_scene_per_hari[day]
+		if final_target != "":
+			get_tree().change_scene_to_file(final_target)

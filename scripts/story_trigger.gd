@@ -32,12 +32,19 @@ func force_trigger() -> void:
 			target_timeline = timeline_per_hari[current_day]
 			
 	if target_timeline != "":
-		# Jika dialog sebelumnya masih berjalan (misalnya hari0_malam_aloha baru saja memancarkan sinyal ganti_hari),
-		# Kita harus tunggu dialog tersebut benar-benar selesai/menutup, baru kita mulai dialog pagi.
-		if Dialogic.current_timeline != null:
-			await Dialogic.timeline_ended
-			
-		Dialogic.start(target_timeline)
+		_wait_and_start(target_timeline)
+
+func _wait_and_start(target_tl: String) -> void:
+	# Tunggu sampai timeline sebelumnya benar-benar bersih
+	while Dialogic.current_timeline != null:
+		await get_tree().create_timer(0.1).timeout
+		
+	if StoryManager.current_day >= 2:
+		# Biarkan MC melakukan animasi melompat dari kasur terlebih dahulu
+		await get_tree().create_timer(1.5).timeout
+		
+	if not Dialogic.current_timeline:
+		Dialogic.start(target_tl)
 		set_deferred("monitoring", false)
 
 func _on_body_entered(body: Node2D) -> void:

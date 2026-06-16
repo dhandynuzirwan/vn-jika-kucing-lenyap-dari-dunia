@@ -133,12 +133,12 @@ func _mc_pingsan():
 	tween.tween_property(player, "position:y", player.position.y + 10, 0.5)
 	await tween.finished
 	
-	# Ganti ke hari ke-2
+	# Ganti ke hari ke-2 dengan transisi loading screen yang sama seperti tidur
 	var sm = get_node_or_null("/root/StoryManager")
 	if sm:
-		sm.current_day = 2
-		sm.can_leave_room = false
-		sm.cafe_event_done = false
-		
-	# Transisi ke kamar MC
-	get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
+		# Panggil fungsi global agar otomatis ada layar gelap dan tulisan Hari ke-2
+		# Oper parameter scene kamar agar saat layar gelap, sistem memindahkan MC ke sana
+		sm.current_day = 1 # Dikurangi 1 karena ganti_hari() akan menambahkannya +1
+		sm.ganti_hari("res://scenes/maps/kamar_mc.tscn")
+	else:
+		get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")

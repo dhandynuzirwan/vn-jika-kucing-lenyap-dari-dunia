@@ -19,7 +19,7 @@
 &"portraits": {
 "dada_sesak": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_DADA_SESAK.png\""
+"image": "\"res://assets/portraits/MC/dada_sesak.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -28,7 +28,7 @@
 },
 "malu_malu": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_MALUMALU.png\""
+"image": "\"res://assets/portraits/MC/malu_malu.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -37,7 +37,7 @@
 },
 "marah": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_MARAH.png\""
+"image": "\"res://assets/portraits/MC/marah.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -46,7 +46,7 @@
 },
 "netral": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_NETRAL.png\""
+"image": "\"res://assets/portraits/MC/netral.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -55,7 +55,7 @@
 },
 "ngakak": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_NGAKAK.png\""
+"image": "\"res://assets/portraits/MC/ngakak.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -64,7 +64,7 @@
 },
 "nyimak_aloha": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_NYIMAK_ALOHA.png\""
+"image": "\"res://assets/portraits/MC/nyimak.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -73,7 +73,7 @@
 },
 "sakit_kepala": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_SAKIT_KEPALA.png\""
+"image": "\"res://assets/portraits/MC/pusing.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -82,7 +82,7 @@
 },
 "senyum_ikhlas": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_SENYUM_IKHLAS.png\""
+"image": "\"res://assets/portraits/MC/senyum_tulus.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -91,7 +91,7 @@
 },
 "senyum_tipis": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_SENYUM_TIPIS.png\""
+"image": "\"res://assets/portraits/MC/senyum_tipis.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -100,7 +100,7 @@
 },
 "syok_kesal": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_SYOK_KESAL.png\""
+"image": "\"res://assets/portraits/MC/syok.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -109,7 +109,7 @@
 },
 "terkejut": {
 "export_overrides": {
-"image": "\"res://assets/portraits/MC/MC_TERKEJUT.png\""
+"image": "\"res://assets/portraits/MC/terkejut.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -117,5 +117,5 @@
 "scene": ""
 }
 },
-&"scale": 0.55
+&"scale": 1.0
 }

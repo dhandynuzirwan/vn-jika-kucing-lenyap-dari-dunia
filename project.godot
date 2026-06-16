@@ -19,6 +19,9 @@ config/icon="res://icon.svg"
 
 Dialogic="*uid://ds2q0uclmolvu"
 StoryManager="*uid://l8alx6gj06g"
+PortraitDimmer="*res://scripts/portrait_dimmer.gd"
+AudioKetik="*res://scripts/audio_ketik.gd"
+PortraitToggler="*res://scripts/portrait_toggler.gd"
 
 [dialogic]
 
@@ -46,6 +49,7 @@ directories/dtl_directory={
 "hari1_pintu": "res://dialogues/hari1_pintu.dtl",
 "hari1_siang_cafe": "res://dialogues/hari1_siang_cafe.dtl",
 "hari1_taman": "res://dialogues/hari1_taman.dtl",
+"hari2_bangun": "res://dialogues/hari2_bangun.dtl",
 "hari2_malam_bioskop": "res://dialogues/hari2_malam_bioskop.dtl",
 "hari2_pagi_kamar": "res://dialogues/hari2_pagi_kamar.dtl",
 "hari2_siang_tsutaya": "res://dialogues/hari2_siang_tsutaya.dtl",

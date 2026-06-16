@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck6uewml1rm5l"
-path="res://.godot/imported/MC_TERKEJUT.png-44b747ba6eca667f0aa5c0222dd5fc66.ctex"
+uid="uid://bin60cdwt1j1e"
+path="res://.godot/imported/ChatGPT_Image_13_Jun_2026__00.22.16_2-removebg-preview.png-3d6f38798333e4087d624f4f71e15087.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/MC/MC_TERKEJUT.png"
-dest_files=["res://.godot/imported/MC_TERKEJUT.png-44b747ba6eca667f0aa5c0222dd5fc66.ctex"]
+source_file="res://assets/Tiles/ChatGPT_Image_13_Jun_2026__00.22.16_2-removebg-preview.png"
+dest_files=["res://.godot/imported/ChatGPT_Image_13_Jun_2026__00.22.16_2-removebg-preview.png-3d6f38798333e4087d624f4f71e15087.ctex"]
 
 [params]
 

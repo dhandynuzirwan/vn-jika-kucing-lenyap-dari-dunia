@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccbm5cwakdnlu"
-path="res://.godot/imported/MC_MARAH.png-81f147fed396d42a8ab905be3a5532ab.ctex"
+uid="uid://did2xref30d0m"
+path="res://.godot/imported/syok.png-865e000274b065fffa1ca2826feffc71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/MC/MC_MARAH.png"
-dest_files=["res://.godot/imported/MC_MARAH.png-81f147fed396d42a8ab905be3a5532ab.ctex"]
+source_file="res://assets/portraits/MC/syok.png"
+dest_files=["res://.godot/imported/syok.png-865e000274b065fffa1ca2826feffc71.ctex"]
 
 [params]
 
