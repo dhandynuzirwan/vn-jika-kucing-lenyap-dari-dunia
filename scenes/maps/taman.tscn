@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://hl27ph57s6ph" path="res://assets/Tiles/ChatGPT Image 13 Jun 2026, 00.22.16 1.png" id="7_x4ivu"]
 [ext_resource type="PackedScene" uid="uid://0hv18rmnpljf" path="res://scenes/characters/npc_mantan.tscn" id="12_omd0x"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_stry"]
+[ext_resource type="PackedScene" uid="uid://d22b7ymumnxmy" path="res://scenes/characters/cat.tscn" id="18_cat"]
+[ext_resource type="Script" path="res://scripts/taman_cutscene_hari3.gd" id="19_taman_hari3"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s67d"]
 
@@ -8778,6 +8781,19 @@ target_scene = "res://scenes/maps/jalanan_kota.tscn"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=678912345]
 shape = SubResource("RectangleShape2D_1s67d")
 
+
+[node name="Hari3Cutscene" type="Node2D" parent="."]
+script = ExtResource("19_taman_hari3")
+
+[node name="NPC_Kubis" parent="Hari3Cutscene" instance=ExtResource("18_cat")]
+position = Vector2(80, 80)
+
+[node name="TriggerBangkuHari3" type="Area2D" parent="Hari3Cutscene"]
+position = Vector2(120, 20)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hari3Cutscene/TriggerBangkuHari3"]
+shape = SubResource("RectangleShape2D_1s67d")
+
 [node name="TriggerTaman" type="Area2D" parent="." unique_id=571855993]
 script = ExtResource("99_stry")
 timeline_per_hari = Array[String](["", "hari1_taman", "", "", ""])
@@ -8795,7 +8811,7 @@ scale = Vector2(0.53063434, 0.4452854)
 text = "TItik Kumpul"
 
 [node name="PintuCafe" type="Area2D" parent="." unique_id=455985120]
-position = Vector2(10, -29)
+position = Vector2(-92, -80)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/cafe.tscn"
 locked_timeline = "pintu_toko_terkunci"
@@ -8819,37 +8835,11 @@ script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/bioskop.tscn"
 locked_timeline = "pintu_toko_terkunci"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PintuBioskop" unique_id=365783876]
-shape = SubResource("RectangleShape2D_1s67d")
-
-[node name="Label" type="Label" parent="PintuBioskop" unique_id=1449529070]
-offset_left = -30.0
-offset_top = -20.0
-offset_right = 30.0
-offset_bottom = 3.0
-text = "BIOSKOP"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
 [node name="PintuTsutaya" type="Area2D" parent="." unique_id=1749441281]
 position = Vector2(182, -31)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/tsutaya.tscn"
 locked_timeline = "pintu_toko_terkunci"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PintuTsutaya" unique_id=1754385310]
-shape = SubResource("RectangleShape2D_1s67d")
-
-[node name="Label" type="Label" parent="PintuTsutaya" unique_id=218003826]
-offset_left = -35.0
-offset_top = -20.0
-offset_right = 35.0
-offset_bottom = 3.0
-text = "TOKO DVD"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="TileMap" type="TileMap" parent="." unique_id=650687959]
 tile_set = SubResource("TileSet_14afo")

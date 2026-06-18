@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://d22b7ymumnxmy"]
 
-[ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="1_43gcw"]
 [ext_resource type="Texture2D" uid="uid://vap1yk7ubinn" path="res://assets/sprites/SPRITESHEET KUCING(16X16).png" id="2_43gcw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2dv3r"]
-size = Vector2(21, 31)
+size = Vector2(21, 6)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_udfqm"]
 atlas = ExtResource("2_43gcw")
@@ -246,18 +245,18 @@ animations = [{
 }]
 
 [node name="NPC_Cat" type="Area2D" unique_id=486957782]
-script = ExtResource("1_43gcw")
-timeline_name = "babak2_day1"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=735589168]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1426728369]
-position = Vector2(0.5, 7.5)
+position = Vector2(0.5, -2)
+scale = Vector2(1.002568, 1)
 shape = SubResource("RectangleShape2D_2dv3r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2090563325]
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_pgbys")
-animation = &"walk_up"
+animation = &"idle_down"
 autoplay = "idle_down"
+frame_progress = 0.9367241
 offset = Vector2(0, -12)

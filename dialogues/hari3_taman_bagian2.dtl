@@ -1,0 +1,16 @@
+[signal arg="mc_duduk"]
+[wait time="1.0"]
+kubis: Ngomong-ngomong, manusia itu betul-betul makhluk aneh ya, tuanku.
+mc: Begitukah?
+kubis: Mengapa mereka menamai bunga segala?
+mc: Ya, karena jenisnya banyak. Harus dibedakan satu-satu.
+kubis: Walaupun jenisnya banyak, mengapa semua harus dinamai, tuanku? Bukankah cukup kalau semua bunga disebut 'bunga' saja?
+narator: Betul juga. Mengapa orang menamai bunga? Tidak hanya bunga, tapi juga barang, warna, bentuk, dan orang. Mengapa perlu nama? Waktu juga begitu. Manusia semena-mena memberi 'nama' semacam hari, bulan, tahun, detik, menit, dan jam pada gejala alam itu. Tak ada lagi waktu di dunia kubis. Tentu saja tak ada jam juga. Aku tersadar, sebagaimana jam, patokan seperti warna dan suhu pun sebenarnya tak ada. Tapi jika seandainya tak ada warna kuning, merah, apakah kubis tidak menganggap bunga randa tapak itu manis atau bunga mawar itu indah?
+mc: Ngomong-ngomong, ibu hebat ya. Menemanimu setiap hari jalan-jalan begini. Pasti repot kalau menemanimu melewatkan waktu seenaknya begini. Ibu benar-benar menyayangimu.
+kubis: Ibu? Ibu itu siapakah gerangan, tuanku?
+mc: Ya, ibuku. Ibumu juga. Benar-benar kamu tidak ingat ibu?
+kubis: Siapakah itu, tuanku?
+[background arg="mc_syok.png" fade="1.0"]
+narator: Aku kehilangan kata. Kubis menatapku polos. Rupanya Kubis benar-benar tidak ingat. Aku sedih. Lebih tepatnya terluka. Satu-satunya saksi hidup tentang kasih sayang Ibu telah kehilangan ingatannya. Di lubuk hatiku aku percaya cerita bahwa hewan takkan melupakan majikannya. Apakah itu sebenarnya hanya khayalan manusia terhadap hewan? Apakah kubis juga akan melupakanku? Apakah suatu saat nanti akan datang hari ketika aku hilang dari dunia kubis? Waktu yang sudah kulewatkan begitu saja selama ini terasa amat berharga bagiku. Tinggal berapa kali lagi aku bisa menyambut pagi bersama kubis? Tinggal berapa kali aku bisa mendengarkan lagu kesayanganku? Tinggal berapa kali aku bisa minum kopi? Tinggal berapa kali aku makan, mengucapkan selamat pagi, bersin, dan tertawa? Selama 30 tahun hidupku ini, pernahkah aku melakukan sesuatu yang benar-benar penting?
+[signal arg="hari3_selesai"]
+[end_timeline]

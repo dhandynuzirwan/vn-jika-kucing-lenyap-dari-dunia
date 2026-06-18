@@ -85,6 +85,28 @@ func _on_dialogic_signal(argument: String) -> void:
 			mantan.is_following_player = true
 			print(">> Mantan sekarang mengikuti Player!")
 
+	elif argument == "aloha_datang":
+		var aloha = get_tree().get_root().find_child("NPC_Aloha", true, false)
+		var player = get_tree().get_first_node_in_group("Player")
+		if aloha and player:
+			aloha.show()
+			aloha.global_position = player.global_position + Vector2(30, 0)
+			
+			var tween = create_tween()
+			aloha.modulate.a = 0
+			tween.tween_property(aloha, "modulate:a", 1.0, 1.0)
+	elif argument == "aloha_serius":
+		var aloha = get_tree().get_root().find_child("NPC_Aloha", true, false)
+		if aloha and aloha.has_node("AnimatedSprite2D"):
+			aloha.get_node("AnimatedSprite2D").play("idle_down")
+	elif argument == "aloha_hilang":
+		var aloha = get_tree().get_root().find_child("NPC_Aloha", true, false)
+		if aloha:
+			var tween = create_tween()
+			tween.tween_property(aloha, "modulate:a", 0.0, 1.0)
+			await tween.finished
+			aloha.hide()
+
 func _on_dialogue_started() -> void:
 	var player = get_tree().get_first_node_in_group("Player")
 	if player and player.has_method("lock_movement"):

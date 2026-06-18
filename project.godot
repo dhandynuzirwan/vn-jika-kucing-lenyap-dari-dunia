@@ -55,6 +55,8 @@ directories/dtl_directory={
 "hari2_siang_tsutaya": "res://dialogues/hari2_siang_tsutaya.dtl",
 "hari3_pagi_kamar": "res://dialogues/hari3_pagi_kamar.dtl",
 "hari3_siang_taman": "res://dialogues/hari3_siang_taman.dtl",
+"hari3_taman_bagian1": "res://dialogues/hari3_taman_bagian1.dtl",
+"hari3_taman_bagian2": "res://dialogues/hari3_taman_bagian2.dtl",
 "hari4_kucing": "res://dialogues/hari4_kucing.dtl",
 "pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
 "pintu_toko_terkunci": "res://dialogues/pintu_toko_terkunci.dtl",

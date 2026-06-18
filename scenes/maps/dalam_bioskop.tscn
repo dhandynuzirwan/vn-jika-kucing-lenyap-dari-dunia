@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://bioskop"]
 
-[ext_resource type="Script" path="res://scripts/bioskop_cutscene.gd" id="1_bioskop"]
-[ext_resource type="PackedScene" path="res://scenes/characters/npc_mantan.tscn" id="2_bioskop"]
-[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="3_bioskop"]
+[ext_resource type="Script" uid="uid://cl343wnm3m7k2" path="res://scripts/bioskop_cutscene.gd" id="1_bioskop"]
+[ext_resource type="PackedScene" uid="uid://0hv18rmnpljf" path="res://scenes/characters/npc_mantan.tscn" id="2_bioskop"]
+[ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="3_bioskop"]
 
-[node name="DalamBioskop" type="Node2D"]
+[node name="DalamBioskop" type="Node2D" unique_id=1106849244]
 script = ExtResource("1_bioskop")
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="." unique_id=600905242]
 y_sort_enabled = true
 format = 2
 
-[node name="NPC_Mantan" parent="." instance=ExtResource("2_bioskop")]
+[node name="NPC_Mantan" parent="." unique_id=2096297878 instance=ExtResource("2_bioskop")]
 position = Vector2(120, 100)
 
-[node name="Player" parent="." instance=ExtResource("3_bioskop")]
+[node name="Player" parent="." unique_id=1085553812 instance=ExtResource("3_bioskop")]
 position = Vector2(80, 100)
