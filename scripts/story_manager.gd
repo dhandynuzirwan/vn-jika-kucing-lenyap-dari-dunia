@@ -168,3 +168,37 @@ func ganti_hari(target_scene: String = "") -> void:
 	
 	transition_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	transition_layer.visible = false
+
+func pulang_malam(target_scene: String) -> void:
+	Dialogic.VAR.set("is_night", true)
+	
+	transition_label.text = "" # Tidak ada teks hari ke-X
+	transition_rect.modulate = Color(1, 1, 1, 0)
+	transition_rect.mouse_filter = Control.MOUSE_FILTER_STOP
+	transition_layer.visible = true
+	
+	var player = get_tree().get_first_node_in_group("Player")
+	if player and player.has_method("lock_movement"):
+		player.lock_movement()
+		
+	var tween_in = get_tree().create_tween()
+	tween_in.tween_property(transition_rect, "modulate", Color(1, 1, 1, 1), 1.5)
+	await tween_in.finished
+	
+	get_tree().change_scene_to_file(target_scene)
+	await get_tree().process_frame
+	await get_tree().process_frame
+	
+	player = get_tree().get_first_node_in_group("Player")
+	if player:
+		player.global_position = Vector2(7, 29) # Posisi di kamar dekat kasur
+		
+	var tween_out = get_tree().create_tween()
+	tween_out.tween_property(transition_rect, "modulate", Color(1, 1, 1, 0), 1.5)
+	await tween_out.finished
+	
+	transition_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	transition_layer.visible = false
+	
+	# Langsung trigger dialog malam
+	Dialogic.start("hari3_malam_kamar")

@@ -47,6 +47,9 @@ func _on_dialogic_signal(argument: String) -> void:
 	elif argument == "ganti_hari_langsung":
 		var sm = get_node_or_null("/root/StoryManager")
 		if sm:
+			if sm.has_method("pulang_malam"):
+			sm.pulang_malam("res://scenes/maps/kamar_mc.tscn")
+		else:
 			sm.ganti_hari("res://scenes/maps/kamar_mc.tscn")
 
 
