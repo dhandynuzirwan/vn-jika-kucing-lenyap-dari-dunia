@@ -18,10 +18,13 @@ func _ready() -> void:
 			# Awal masuk scene, langsung jalankan cutscene dan kunci pergerakan
 			player.lock_movement()
 		
-		Dialogic.start("hari3_taman_bagian1")
 		var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
-		if trigger_bangku and not trigger_bangku.body_entered.is_connected(_on_trigger_bangku_body_entered):
-			trigger_bangku.body_entered.connect(_on_trigger_bangku_body_entered)
+		if trigger_bangku:
+			trigger_bangku.monitoring = false
+			if not trigger_bangku.body_entered.is_connected(_on_trigger_bangku_body_entered):
+				trigger_bangku.body_entered.connect(_on_trigger_bangku_body_entered)
+		
+		Dialogic.start("hari3_taman_bagian1")
 
 	else:
 		# Jika bukan hari ke-3, hapus trigger bangku khusus
@@ -37,19 +40,15 @@ func _on_dialogic_signal(argument: String) -> void:
 		_jalan_ke_kanan_anim()
 	elif argument == "kubis_jalan_ke_bukit":
 		_jalan_ke_atas_anim()
-	elif argument == "kubis_duduk":
-		if kubis and kubis.has_node("AnimatedSprite2D"):
-			kubis.get_node("AnimatedSprite2D").play("sit_down")
-	elif argument == "izinkan_mc_jalan":
-		if player and player.has_method("unlock_movement"):
-			player.unlock_movement()
-	elif argument == "mc_duduk":
-		# Animasi player duduk
-		if player and player.has_method("play_custom_animation"):
-			player.play_custom_animation("sit_down")
-	elif argument == "hari3_selesai":
-		# Selesai event
-		StoryManager._on_dialogic_signal("event_selesai")
+	elif argument == "aktifkan_bangku":
+		var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
+		if trigger_bangku:
+			trigger_bangku.set_deferred("monitoring", true)
+	elif argument == "ganti_hari_langsung":
+		var sm = get_node_or_null("/root/StoryManager")
+		if sm:
+			sm.ganti_hari("res://scenes/maps/kamar_mc.tscn")
+
 
 func _jalan_ke_kanan_anim() -> void:
 	if kubis:
@@ -80,9 +79,27 @@ func _jalan_ke_atas_anim() -> void:
 # Script dipanggil oleh Area2D bangku
 func _on_trigger_bangku_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player") and StoryManager.current_day == 3:
-		# Mulai bagian 2 dan nonaktifkan trigger ini
+		var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
+		if trigger_bangku:
+			trigger_bangku.set_deferred("monitoring", false)
+			
+		if player and player.has_method("lock_movement"):
+			player.lock_movement()
+			
+		if player and player.has_method("play_custom_animation"):
+			player.play_custom_animation("sit_down")
+			
+		if kubis:
+			var anim = kubis.get_node_or_null("AnimatedSprite2D")
+			if anim:
+				anim.play("walk_left")
+			
+			var tween = create_tween()
+			tween.tween_property(kubis, "global_position", player.global_position + Vector2(10, 0), 1.5)
+			await tween.finished
+			
+			if anim:
+				anim.play("melingkar_down")
+				
 		if not Dialogic.current_timeline:
 			Dialogic.start("hari3_taman_bagian2")
-			var trigger = get_node_or_null("TriggerBangkuHari3")
-			if trigger:
-				trigger.set_deferred("monitoring", false)

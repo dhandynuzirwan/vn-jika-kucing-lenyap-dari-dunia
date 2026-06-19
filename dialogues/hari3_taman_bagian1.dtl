@@ -19,7 +19,5 @@ kubis: Sahaya mau duduk di tempat ini tuanku.
 [background arg="kucing_acak_catur.png" fade="1.0"]
 [wait time="2.0"]
 [background arg="" fade="1.0"]
-[signal arg="kubis_duduk"]
-[wait time="1.0"]
-[signal arg="izinkan_mc_jalan"]
+[signal arg="aktifkan_bangku"]
 [end_timeline]
